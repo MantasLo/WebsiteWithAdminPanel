@@ -1,0 +1,66 @@
+.top-line{
+    background-image: radial-gradient(circle at top left,#576574 0%,rgba(255,255,255,.87) 100%),
+    url("src/assets/paslaugos.jpg")!important;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    padding-top: 100px;
+    position: relative;
+    background-color: #fff;
+    .inside-top-line{
+        max-width: 1280px;
+        padding: 30px 0;
+        position: relative;
+        width: 80%;
+        .text{
+            border-left-width: 10px;
+            border-left-color: #295da8;
+            padding-left: 16px!important;
+            margin-bottom: 0px!important;
+            color: #fff!important;
+            .inside-text{
+                padding-bottom: 0;
+                h1{
+                    font-size: 3rem;
+                    line-height: 1.3em;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1400px) and (min-width: 1200px){
+
+  }
+  @media (max-width: 1200px) and (min-width: 991px){
+
+  }
+  @media only screen and (max-width: 992px) and (min-width: 769px){
+      .inside-text{
+          h1{
+              font-size:4rem;
+          }
+      }
+  
+  }
+  @media only screen and (max-width: 769px) and (min-width: 576px){
+    .inside-text{
+        h1{
+            font-size:4rem;
+        }
+    }
+}
+
+  @media (max-width: 576px) and (min-width: 414px){
+    .inside-text{
+        h1{
+            font-size:3rem;
+        }
+    }
+}
+@media only screen and (max-width: 414px) {
+    .inside-text{
+        h1{
+            font-size:2rem;
+        }
+    }
+}

@@ -1,0 +1,151 @@
+<div *ngFor="let content of allcontent">
+    <div class="top-line">
+        <div class="inside-top-line">
+            <div class="text">
+                <div class="inside-text">
+                    <h1>{{content.title11}}</h1>
+                </div>
+            </div>
+        </div>
+    </div> 
+    <div class="container">
+        <div class="small row row-heading" *ngIf="content.title31.length > 0">
+            <div class="row-title">
+                <h2 class="title">{{content.title31}}</h2>
+            </div>
+            <div class="near-image">
+            <p *ngIf="content.description31.length > 0">{{content.description31}} </p>
+            <p *ngIf="content.description32.length > 0">{{content.description32}} </p>
+            <p *ngIf="content.description33.length > 0">{{content.description33}} </p>
+        </div>
+        </div>
+    <div class="row row-heading" *ngIf="content.description41.length > 0">
+        <div class="col-md-6">
+            <ngx-gallery [options]="galleryOptions4" [images]="galleryImages4"></ngx-gallery>
+            <!-- <img class="img-half" src="{{content.image4}}" alt="{{content.imageAlt4}}"> -->
+        </div>
+        <div class="col-md-6">
+            <div class="near-image">
+            <p >{{content.description41}}</p>
+            <p *ngIf="content.description42.length > 0">{{content.description42}}</p>
+            <p *ngIf="content.description43.length > 0">{{content.description43}}</p>
+        </div>
+        </div>
+    </div>
+    <div class="small row row-heading" *ngIf="content.title51.length > 0">
+        <div class="row-title">
+        <h2 class="title"> {{content.title51}}</h2>
+    </div>
+        <p *ngIf="content.description51.length > 0">{{content.description51}} </p>
+        <p *ngIf="content.description52.length > 0">{{content.description52}} </p>
+        <p *ngIf="content.description53.length > 0">{{content.description53}} </p>
+    </div>
+    <div class="row row-heading" *ngIf="content.description61.length > 0">
+        <div class="col-md-6">
+            <div class="near-image">
+            
+            <p >{{content.description61}}</p>
+            <p *ngIf="content.description62.length > 0">{{content.description62}}</p>
+            <p *ngIf="content.description63.length > 0">{{content.description63}}</p>
+        </div></div>
+        <div class="col-md-6">
+            <ngx-gallery [options]="galleryOptions6" [images]="galleryImages6"></ngx-gallery>
+            <!-- <img class="img-half" src="{{content.image6}}" alt="{{content.imageAlt6}}"> -->
+        </div>
+    </div>
+    <div class="small row row-heading" *ngIf="content.title71.length > 0">
+        <div class="row-title">
+        <h2 class="title">{{content.title71}}</h2>
+    </div>
+        <p *ngIf="content.description71.length > 0">{{content.description71}} </p>
+        <p *ngIf="content.description72.length > 0">{{content.description72}} </p>
+        <p *ngIf="content.description73.length > 0">{{content.description73}} </p>
+    </div>
+    <div class="row row-heading" *ngIf="content.description81.length > 0">
+        <div class="col-md-6">
+            <ngx-gallery [options]="galleryOptions8" [images]="galleryImages8"></ngx-gallery>
+            <!-- <img class="img-half" src="{{content.image8}}" alt="{{content.imageAlt8}}"> -->
+        </div>
+        <div class="col-md-6">
+            <div class="near-image">
+            <p >{{content.description81}}</p>
+            <p *ngIf="content.description82.length > 0">{{content.description82}}</p>
+            <p *ngIf="content.description83.length > 0">{{content.description83}}</p>
+        </div></div>
+    </div>
+    <div class="small row row-heading" *ngIf="content.title91.length > 0">
+        <div class="row-title">
+            <h2 class="title">{{content.title91}}</h2>
+        </div>
+        
+        <p *ngIf="content.description91.length > 0">{{content.description91}} </p>
+        <p *ngIf="content.description92.length > 0">{{content.description92}} </p>
+        <p *ngIf="content.description93.length > 0">{{content.description93}} </p>
+    </div>
+    <div class="row row-heading" *ngIf="content.description101.length > 0">
+        <div class="col-md-6">
+            <div class="near-image">
+            <p >{{content.description101}}</p>
+            <p *ngIf="content.description102.length > 0">{{content.description102}}</p>
+            <p *ngIf="content.description103.length > 0">{{content.description103}}</p>
+        </div></div>
+        <div class="col-md-6">
+            <ngx-gallery [options]="galleryOptions10" [images]="galleryImages10"></ngx-gallery>
+            <!-- <img class="img-half" src="{{content.image10}}" alt="{{content.imageAlt10}}"> -->
+        </div>
+    </div>
+    <div class="small row row-heading" *ngIf="content.title111.length > 0">
+        <div class="row-title">
+            <h2 class="title">{{content.title111}}</h2>
+        </div>
+        
+        <p *ngIf="content.description111.length > 0">{{content.description111}} </p>
+        <p *ngIf="content.description112.length > 0">{{content.description112}} </p>
+        <p *ngIf="content.description113.length > 0">{{content.description113}} </p>
+    </div>
+    <div class="row row-heading" *ngIf="content.description121.length > 0">
+        <div class="col-md-6">
+            <ngx-gallery [options]="galleryOptions12" [images]="galleryImages12"></ngx-gallery>
+            <!-- <img class="img-half" src="{{content.image12}}" alt="{{content.imageAlt12}}"> -->
+        </div>
+        <div class="col-md-6">
+            <div class="near-image">
+            <p >{{content.description121}}</p>
+            <p *ngIf="content.description122.length > 0">{{content.description122}}</p>
+            <p *ngIf="content.description123.length > 0">{{content.description123}}</p>
+        </div></div>
+    </div>
+    <div class="small row row-heading" *ngIf="content.title131.length > 0">
+        <div class="row-title">
+            <h2 class="title">{{content.title131}}</h2>
+        </div>
+        
+        <p *ngIf="content.description131.length > 0">{{content.description131}} </p>
+        <p *ngIf="content.description132.length > 0">{{content.description132}} </p>
+        <p *ngIf="content.description133.length > 0">{{content.description133}} </p>
+    </div>
+</div>
+
+<div class="container row-heading">
+    
+     <div class="row">
+            <br>
+            <div class="my-app-custom-plain-container-row">
+            
+                <ngx-gallery [options]="galleryOptions" [images]="galleryImages"></ngx-gallery>
+                
+            </div>
+          
+    </div>
+     <div class="row small">
+        <div class="row-title">
+        <h2 class="title" *ngIf="content.title21.length > 0">{{content.title21}}</h2>
+    </div>
+        <p *ngIf="content.description21.length > 0">{{content.description21}} </p>
+        <p *ngIf="content.description22.length > 0">{{content.description22}} </p>
+        <p *ngIf="content.description23.length > 0">{{content.description23}} </p>
+    </div>
+</div>
+  </div>
+
+  <app-footer class="footer" #target></app-footer>

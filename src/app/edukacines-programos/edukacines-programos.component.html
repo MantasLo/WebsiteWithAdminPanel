@@ -1,0 +1,432 @@
+<div *ngFor="let content of allcontent">
+    <div class="top-line">
+        <div class="inside-top-line">
+            <div class="text">
+                <div class="inside-text">
+                    <h1>{{content.title11}}</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row row-margin-top">
+            <img class="img-long" *ngIf="content.image1.length > 0" src="{{content.image1}}" alt="{{content.imageAlt1}}">
+        </div>
+        <div class="row row-margin-top small">
+            <h2 class="title" *ngIf="content.title21.length > 0">{{content.title21}}</h2>
+            <p *ngIf="content.description21.length > 0">{{content.description21}} </p>
+            <p *ngIf="content.description22.length > 0">{{content.description22}} </p>
+            <p *ngIf="content.description23.length > 0">{{content.description23}} </p>
+        </div>
+        <div class="row row-margin-top">
+            <h2 class="title" *ngIf="content.title31.length > 0">{{content.title31}}</h2>
+        </div>
+        <div class="row row-margin-top">
+            <div class="col-md-6">
+                <img class="img-half" src="{{content.image2}}" alt="{{content.imageAlt2}}">
+            </div>
+            <div class="col-md-6 near-image">
+                <ul>
+                <li *ngIf="content.listItem31.length > 0">{{content.listItem31}}</li>
+                <li *ngIf="content.listItem32.length > 0">{{content.listItem32}}</li>
+                <li *ngIf="content.listItem33.length > 0">{{content.listItem33}}</li>
+                <li *ngIf="content.listItem34.length > 0">{{content.listItem34}}</li>
+                <li *ngIf="content.listItem35.length > 0">{{content.listItem35}}</li>
+                <li *ngIf="content.listItem36.length > 0">{{content.listItem36}}</li>
+            </ul>
+            </div>
+        </div>
+        <div class="row row-margin-top small">
+            <p *ngIf="content.description24.length > 0">{{content.description24}} </p>
+            <p *ngIf="content.description25.length > 0">{{content.description25}} </p>
+            <p *ngIf="content.description25.length > 0">{{content.description26}} </p>
+        </div>
+    </div>
+    <div class="container row-margin-top">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="box">
+                    <h3>{{content.boxTitle4}}</h3>
+                    <ul *ngIf="content.listItem41.length > 0">
+                        <li>{{content.listItem41}}</li>
+                        <li *ngIf="content.listItem42.length > 0">{{content.listItem42}}</li>
+                        <li *ngIf="content.listItem43.length > 0">{{content.listItem43}}</li>
+                        <li *ngIf="content.listItem44.length > 0">{{content.listItem44}}</li>
+                        <li *ngIf="content.listItem45.length > 0">{{content.listItem45}}</li>
+                        <li *ngIf="content.listItem46.length > 0">{{content.listItem46}}</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="box-multi">
+                    <div class="box">
+                        <div class="tab-content">
+                        <div class="tab-pane fade show" 
+			  [ngClass]="{'active':clicked1}">
+                        <h3 class="mb-4" *ngIf="content.boxTitle5.length > 0">{{content.boxTitle5}}</h3>
+                        <h4 *ngIf="content.title51.length > 0">{{content.title51}}</h4>
+		              	    <ul *ngIf="content.listItem51.length > 0">
+                              <li >{{content.listItem51}}</li>
+                              <li *ngIf="content.listItem52.length > 0">{{content.listItem52}}</li>
+                              <li *ngIf="content.listItem53.length > 0">{{content.listItem53}}</li>
+                              <li *ngIf="content.listItem54.length > 0">{{content.listItem54}}</li>
+                              <li *ngIf="content.listItem55.length > 0">{{content.listItem55}}</li>
+                              <li *ngIf="content.listItem56.length > 0">{{content.listItem56}}</li>
+                          </ul>
+                        </div>
+                    </div>
+                        <div class="tab-content">
+                        <div class="tab-pane fade show" 
+			  [ngClass]="{'active':clicked2}">
+		                <h3 class="mb-4" *ngIf="content.boxTitle5.length > 0">{{content.boxTitle5}}</h3>
+                        <h4 *ngIf="content.title61.length > 0">{{content.title61}}</h4>  
+                        <ul *ngIf="content.listItem61.length > 0">
+                            <li >{{content.listItem61}}</li>
+                            <li *ngIf="content.listItem62.length > 0">{{content.listItem62}}</li>
+                            <li *ngIf="content.listItem63.length > 0">{{content.listItem63}}</li>
+                            <li *ngIf="content.listItem64.length > 0">{{content.listItem64}}</li>
+                            <li *ngIf="content.listItem65.length > 0">{{content.listItem65}}</li>
+                            <li *ngIf="content.listItem66.length > 0">{{content.listItem66}}</li>
+                        </ul>
+                        </div>
+                    </div>
+                        <div class="tab-content">
+                        <div class="tab-pane fade show" 
+			  [ngClass]="{'active':clicked3}">
+		                <h3 class="mb-4" *ngIf="content.boxTitle5.length > 0">{{content.boxTitle5}}</h3>
+                        <h4 *ngIf="content.title71.length > 0">{{content.title71}}</h4>  
+                        <ul *ngIf="content.listItem71.length > 0">
+                            <li >{{content.listItem71}}</li>
+                            <li *ngIf="content.listItem72.length > 0">{{content.listItem72}}</li>
+                            <li *ngIf="content.listItem73.length > 0">{{content.listItem73}}</li>
+                            <li *ngIf="content.listItem74.length > 0">{{content.listItem74}}</li>
+                            <li *ngIf="content.listItem75.length > 0">{{content.listItem75}}</li>
+                            <li *ngIf="content.listItem76.length > 0">{{content.listItem76}}</li>
+                        </ul>
+                        </div>
+                    </div>
+                        <div class="tab-content">
+                        <div class="tab-pane fade show" 
+			  [ngClass]="{'active':clicked4}">
+                <h3 class="mb-4" *ngIf="content.boxTitle5.length > 0">{{content.boxTitle5}}</h3>
+                    <h4 *ngIf="content.title81.length > 0">{{content.title81}}</h4>  
+                    <ul *ngIf="content.listItem81.length > 0">
+                        <li >{{content.listItem81}}</li>
+                        <li *ngIf="content.listItem82.length > 0">{{content.listItem82}}</li>
+                        <li *ngIf="content.listItem83.length > 0">{{content.listItem83}}</li>
+                        <li *ngIf="content.listItem84.length > 0">{{content.listItem84}}</li>
+                        <li *ngIf="content.listItem85.length > 0">{{content.listItem85}}</li>
+                        <li *ngIf="content.listItem86.length > 0">{{content.listItem86}}</li>
+                    </ul>
+                        </div>
+                    </div>
+                        <div class="tab-content">
+                        <div class="tab-pane fade show" 
+			  [ngClass]="{'active':clicked5}" *ngIf="content.title91.length > 0">
+                    <h3 class="mb-4" *ngIf="content.boxTitle5.length > 0">{{content.boxTitle5}}</h3>
+                        <h4 *ngIf="content.title91.length > 0">{{content.title91}}</h4>  
+                        <ul *ngIf="content.listItem91.length > 0">
+                            <li >{{content.listItem91}}</li>
+                            <li *ngIf="content.listItem92.length > 0">{{content.listItem92}}</li>
+                            <li *ngIf="content.listItem93.length > 0">{{content.listItem93}}</li>
+                            <li *ngIf="content.listItem94.length > 0">{{content.listItem94}}</li>
+                            <li *ngIf="content.listItem95.length > 0">{{content.listItem95}}</li>
+                            <li *ngIf="content.listItem96.length > 0">{{content.listItem96}}</li>
+                        </ul>
+                        </div>
+                    </div>
+                        <div class="tab-content">
+                        <div class="tab-pane fade show" 
+			  [ngClass]="{'active':clicked6}" *ngIf="content.title101.length > 0">
+                    <h3 class="mb-4" *ngIf="content.boxTitle5.length > 0">{{content.boxTitle5}}</h3>
+                        <h4 *ngIf="content.title101.length > 0">{{content.title101}}</h4>  
+                        <ul *ngIf="content.listItem101.length > 0">
+                            <li >{{content.listItem101}}</li>
+                            <li *ngIf="content.listItem102.length > 0">{{content.listItem102}}</li>
+                            <li *ngIf="content.listItem103.length > 0">{{content.listItem103}}</li>
+                            <li *ngIf="content.listItem104.length > 0">{{content.listItem104}}</li>
+                            <li *ngIf="content.listItem105.length > 0">{{content.listItem105}}</li>
+                            <li *ngIf="content.listItem106.length > 0">{{content.listItem106}}</li>
+                        </ul>
+                        </div>
+                    </div>
+                        <div class="tab-content">
+                        <div class="tab-pane fade show" 
+			  [ngClass]="{'active':clicked7}" *ngIf="content.title111.length > 0">
+                    <h3 class="mb-4" *ngIf="content.boxTitle5.length > 0">{{content.boxTitle5}}</h3>
+                        <h4 *ngIf="content.title111.length > 0">{{content.title111}}</h4>  
+                        <ul *ngIf="content.listItem111.length > 0">
+                            <li >{{content.listItem111}}</li>
+                            <li *ngIf="content.listItem112.length > 0">{{content.listItem112}}</li>
+                            <li *ngIf="content.listItem113.length > 0">{{content.listItem113}}</li>
+                            <li *ngIf="content.listItem114.length > 0">{{content.listItem114}}</li>
+                            <li *ngIf="content.listItem115.length > 0">{{content.listItem115}}</li>
+                            <li *ngIf="content.listItem116.length > 0">{{content.listItem116}}</li>
+                        </ul>
+                        </div>
+                    </div>
+                        <div class="tab-content">
+                            <div class="tab-pane fade show" 
+			  [ngClass]="{'active':clicked8}" *ngIf="content.title121.length > 0">
+                    <h3 class="mb-4" *ngIf="content.boxTitle5.length > 0">{{content.boxTitle5}}</h3>
+                        <h4 *ngIf="content.title121.length > 0">{{content.title121}}</h4>  
+                        <ul *ngIf="content.listItem121.length > 0">
+                            <li >{{content.listItem121}}</li>
+                            <li *ngIf="content.listItem122.length > 0">{{content.listItem122}}</li>
+                            <li *ngIf="content.listItem123.length > 0">{{content.listItem123}}</li>
+                            <li *ngIf="content.listItem124.length > 0">{{content.listItem124}}</li>
+                            <li *ngIf="content.listItem125.length > 0">{{content.listItem125}}</li>
+                            <li *ngIf="content.listItem126.length > 0">{{content.listItem126}}</li>
+                        </ul>
+                        </div>
+                        </div>
+                        
+                    </div>
+                    <div class="buttons">
+                        <div class="row">
+                            <div class="line d-inline-flex">
+                                <a class="nav-link" 
+			  [ngClass]="{'active':clicked1}" 
+			  (click)="Clicked(1)" *ngIf="content.title51.length > 0">{{content.title51}}</a>
+
+			  <a class="nav-link" 
+			  [ngClass]="{'active':clicked2}" 
+			  (click)="Clicked(2)" *ngIf="content.title61.length > 0">{{content.title61}}</a>
+
+			  <a class="nav-link"
+			  [ngClass]="{'active':clicked3}" 
+              (click)="Clicked(3)" *ngIf="content.title71.length > 0">{{content.title71}}</a>
+
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="line d-inline-flex">
+                                <a class="nav-link" 
+			  [ngClass]="{'active':clicked4}" 
+			  (click)="Clicked(4)" *ngIf="content.title81.length > 0">{{content.title81}}</a>
+
+			  <a class="nav-link" 
+			  [ngClass]="{'active':clicked5}" 
+			  (click)="Clicked(5)" *ngIf="content.title91.length > 0">{{content.title91}}</a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="line d-inline-flex">
+                                <a class="nav-link"
+                                [ngClass]="{'active':clicked6}" 
+                                (click)="Clicked(6)" *ngIf="content.title101.length > 0">{{content.title101}}</a>
+                                <a class="nav-link" 
+                                [ngClass]="{'active':clicked7}" 
+                                (click)="Clicked(7)" *ngIf="content.title111.length > 0">{{content.title111}}</a>
+                  
+                                <a class="nav-link" 
+                                [ngClass]="{'active':clicked8}" 
+                                (click)="Clicked(8)" *ngIf="content.title121.length > 0">{{content.title121}}</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row" *ngIf="content.listItem1.length > 0">
+            <div class="text-middle">
+                <div class="text-middle-inside">
+                    <h2 class="title">{{content.title0}}</h2>
+                    <div class="icons">
+                        <div class="icon-right">
+                            <i (click)="prev()" class="ngx-gallery-icon-content fa fa-arrow-circle-left"></i>
+                        </div>
+                        <div class="icon-left">
+                            <i (click)="next()" class="ngx-gallery-icon-content fa fa-arrow-circle-right"></i>
+                            
+                      </div>
+                   
+                        
+
+                      
+
+                    <carousel-component [mode]="'horizontal'" #topCarousel>
+
+                        <div class="item-carousel" *ngFor="let image of images">
+                            <h4 class="text-carousel">{{ image }}</h4>
+                            </div>
+            <!-- <div class="item-carousel" >a </div>
+            <div class="item-carousel" >
+                <div class="b" >
+                    <img src="https://www.losminionsaldia.com/images/mas-minions/minion.png">
+                </div>
+            </div>
+            <div class="item-carousel" >c</div>
+            <div class="item-carousel" >d</div> -->
+          </carousel-component>
+                </div>
+            </div>
+            </div>
+        </div>
+
+                    <!-- <mdb-carousel [animation]="'slide'" >
+                        <mdb-carousel-item >
+                            <div class="coraousel-item">
+                            <p class="carousel-item">{{content.listItem1}}</p> 
+                        </div>                   
+                        </mdb-carousel-item>
+                        <mdb-carousel-item > 
+                            <div class="coraousel-item">
+                                <p>{{content.listItem2}}</p>                           
+
+                            </div>
+                        </mdb-carousel-item>
+                        <mdb-carousel-item >
+                            <div class="coraousel-item">
+                            <p class="carousel-item">{{content.listItem3}}</p>   
+                        </div>                        
+                        </mdb-carousel-item>
+                        <mdb-carousel-item >
+                            <div class="coraousel-item">
+                            <p class="carousel-item">{{content.listItem4}}</p>     
+                        </div>                      
+                        </mdb-carousel-item>
+                        <mdb-carousel-item >
+                            <div class="coraousel-item">
+                            <p class="carousel-item">{{content.listItem5}}</p>    
+                        </div>                       
+                        </mdb-carousel-item>
+                        <mdb-carousel-item >
+                            <div class="coraousel-item">
+                            <p class="carousel-item">{{content.listItem6}}</p>    
+                        </div>                       
+                        </mdb-carousel-item>
+                        <mdb-carousel-item >
+                            <div class="coraousel-item">
+                            <p class="carousel-item">{{content.listItem7}}</p>  
+                        </div>                         
+                        </mdb-carousel-item>
+                        <mdb-carousel-item>
+                            <div class="coraousel-item">
+                            <p class="carousel-item">{{content.listItem8}}</p>      
+                        </div>                     
+                        </mdb-carousel-item>
+                        <mdb-carousel-item >
+                            <div class="coraousel-item">
+                            <p class="carousel-item">{{content.listItem9}}</p>   
+                        </div>                        
+                        </mdb-carousel-item>
+                        <mdb-carousel-item >
+                            <div class="coraousel-item">
+                            <p class="carousel-item">{{content.listItem10}}</p>    
+                        </div>                       
+                        </mdb-carousel-item>
+                        <mdb-carousel-item >
+                            <div class="coraousel-item">
+                            <p class="carousel-item">{{content.listItem11}}</p>  
+                        </div>                         
+                        </mdb-carousel-item>
+                        <mdb-carousel-item >
+                            <div class="coraousel-item">
+                            <p class="carousel-item">{{content.listItem12}}</p>  
+                        </div>                         
+                        </mdb-carousel-item>
+                       
+                      </mdb-carousel> -->
+
+                      <!-- <ngx-slick-carousel class="carousel" 
+                        #slickModal="slick-carousel" 
+                        [config]="slideConfig" 
+                        (init)="slickInit($event)"
+                        (breakpoint)="breakpoint($event)"
+                        (afterChange)="afterChange($event)"
+                        (beforeChange)="beforeChange($event)">
+        <div ngxSlickItem *ngFor="let slide of sides" class="slide">
+            <div class="coraousel-item">
+                <p class="carousel-item">{{slide.img}}</p>  
+            </div> 
+        </div>
+    </ngx-slick-carousel> -->
+    
+    <!-- <button (click)="addSlide()">Add</button>
+    <button (click)="removeSlide()">Remove</button>
+    <button (click)="slickModal.slickGoTo(2)">slickGoto 2</button>
+    <button (click)="slickModal.unslick()">unslick</button> -->
+
+
+<!-- <div class="row">
+
+
+                     <div class="col-md-6">
+                        <p *ngIf="content.description0.length > 0">{{content.description0}}</p>
+                        <ul *ngIf="content.listItem1.length > 0">
+                            <li ></li>
+                            <li *ngIf="content.listItem2.length > 0">{{content.listItem2}}</li>
+                            <li *ngIf="content.listItem3.length > 0">{{content.listItem3}}</li>
+                            <li *ngIf="content.listItem4.length > 0">{{content.listItem4}}</li>
+                            <li *ngIf="content.listItem5.length > 0">{{content.listItem5}}</li>
+                            <li *ngIf="content.listItem6.length > 0">{{content.listItem6}}</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <ul *ngIf="content.listItem7.length > 0">
+                            <li >{{content.listItem7}}</li>
+                            <li *ngIf="content.listItem8.length > 0">{{content.listItem8}}</li>
+                            <li *ngIf="content.listItem9.length > 0">{{content.listItem9}}</li>
+                            <li *ngIf="content.listItem10.length > 0">{{content.listItem10}}</li>
+                            <li *ngIf="content.listItem11.length > 0">{{content.listItem11}}</li>
+                            <li *ngIf="content.listItem12.length > 0">{{content.listItem12}}</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <div class="row row-margin-top">
+            <div class="col-md-6 near-image nr">
+
+                    <h3>{{content.boxTitle13}}</h3>
+                    <ul *ngIf="content.listItem131.length > 0">
+                        <li>{{content.listItem131}}</li>
+                        <li *ngIf="content.listItem132.length > 0">{{content.listItem132}}</li>
+                        <li *ngIf="content.listItem133.length > 0">{{content.listItem133}}</li>
+                        <li *ngIf="content.listItem134.length > 0">{{content.listItem134}}</li>
+                        <li *ngIf="content.listItem135.length > 0">{{content.listItem135}}</li>
+                        <li *ngIf="content.listItem136.length > 0">{{content.listItem136}}</li>
+                    </ul>
+            </div>
+            <div class="col-md-6 ">
+                <div class="image-transparent">
+                    <img class="img-half" src="{{content.image3}}" alt="{{content.imageAlt3}}">
+                </div>
+            </div>
+        </div>
+        <div class="row row-margin-top small">
+            <h3 class="title" *ngIf="content.title141.length > 0">{{content.title14}}</h3>
+            <p *ngIf="content.description141.length > 0">{{content.description141}}</p>
+            <p *ngIf="content.description142.length > 0">{{content.description142}}</p>
+            <p *ngIf="content.description143.length > 0">{{content.description143}}</p>
+                <ul *ngIf="content.listItem141.length > 0">
+                    <li>{{content.listItem141}}</li>
+                    <li *ngIf="content.listItem142.length > 0">{{content.listItem142}}</li>
+                    <li *ngIf="content.listItem143.length > 0">{{content.listItem143}}</li>
+                    <li *ngIf="content.listItem144.length > 0">{{content.listItem144}}</li>
+                    <li *ngIf="content.listItem145.length > 0">{{content.listItem145}}</li>
+                    <li *ngIf="content.listItem146.length > 0">{{content.listItem146}}</li>
+                </ul>
+            </div>
+            <div class="row row-margin-top small">
+                <h4 class="title" *ngIf="content.title142.length > 0">{{content.title14}}</h4>
+                <p *ngIf="content.description144.length > 0">{{content.description144}}</p>
+            <p *ngIf="content.description145.length > 0">{{content.description145}}</p>
+            <p *ngIf="content.description146.length > 0">{{content.description146}}</p>
+            <p *ngIf="content.description147.length > 0">{{content.description147}}</p>
+            <ul *ngIf="content.listItem147.length > 0">
+                <li>{{content.listItem147}}</li>
+                <li *ngIf="content.listItem148.length > 0">{{content.listItem148}}</li>
+                <li *ngIf="content.listItem149.length > 0">{{content.listItem149}}</li>
+            </ul>
+            </div>
+            <div class="row row-margin-top small">
+                <h4 class="title" *ngIf="content.title143.length > 0">{{content.title143}}</h4>
+                <p *ngIf="content.description148.length > 0">{{content.description148}}</p>
+                <p *ngIf="content.description149.length > 0">{{content.description149}}</p>
+                <p *ngIf="content.description1410.length > 0">{{content.description1410}}</p>
+            </div>
+    </div>
+</div>
+<app-footer class="footer" #target></app-footer>

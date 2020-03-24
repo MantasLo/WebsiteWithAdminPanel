@@ -1,0 +1,217 @@
+.top-line{
+    background-image: radial-gradient(circle at top left,#576574 0%,rgba(255,255,255,.87) 100%),
+    url("src/assets/paslaugos.jpg")!important;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    padding-top: 100px;
+    position: relative;
+    background-color: #fff;
+    .inside-top-line{
+        max-width: 1280px;
+        padding: 30px 0;
+        position: relative;
+        width: 80%;
+        .text{
+            border-left-width: 10px;
+            border-left-color: #295da8;
+            padding-left: 16px!important;
+            margin-bottom: 0px!important;
+            color: #fff!important;
+            .inside-text{
+                padding-bottom: 0;
+                h1{
+                    font-size: 3rem;
+                    line-height: 1.3em;
+                }
+            }
+        }
+    }
+} 
+.first-row{
+    margin-top: 40px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+.row-alone{
+margin-top: 60px;
+margin-bottom: 40px;
+}
+.special-list-title{
+    font-size: 14px!important;
+}
+.special-list-text{
+    font-size: 12px!important;
+}
+.img{
+    width: 100%;
+}
+.text-title{
+    text-transform: uppercase;
+
+    margin-top: 40px;
+    margin-bottom:20px;
+}
+
+.near-image{
+    background-color: #f2f2f2;
+    padding: 30px!important;
+}
+
+.col-md-6{
+    padding: 0px;
+}
+
+
+
+.section-heading{
+    .special-list{
+        box-sizing: border-box;
+       
+        width: 100%;
+        .inside-special-list{
+            background-color: rgba(0,0,0,0.06);
+            padding: 40px;
+            margin-top: 50px;
+            position: relative;
+            .number{
+                color: #576574;
+                font-size: 80px;
+                letter-spacing: -1px;
+                font-weight: 600;
+                top: -45px;
+                left: 35px;
+                position: absolute;
+                line-height: 1;
+            }
+            h3{
+                margin: 20px 0 10px;
+                font-size: 24px;
+            }
+            p{
+                color: #576574;
+                font-size: 15px;
+                font-weight: 300;
+            }
+        }
+    }
+}
+.list-item{
+    font-size: 1rem;
+}
+.section-title{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1.3em;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+@media only screen and (max-width: 1400px) and (min-width: 1200px){
+
+}
+@media (max-width: 1200px) and (min-width: 991px){
+
+}
+@media only screen and (max-width: 992px) and (min-width: 769px){
+    .inside-text{
+        h1{
+            font-size:2.5rem;
+        }
+    }
+    .text-title{
+        font-size: 46px;
+    }
+    .text-title{
+        font-size: 46px;
+    }
+}
+@media only screen and (max-width: 769px) and (min-width: 576px){
+    .inside-text{
+        h1{
+            font-size:2.5rem;
+        }
+    }
+    .text-title{
+        font-size: 46px;
+    }
+}
+
+@media (max-width: 576px) and (min-width: 414px){
+  .inside-text{
+      h1{
+          font-size:2.5rem;
+          line-height: 3rem;
+      }
+  }
+  .small{
+      padding: 0px 40px;
+  }
+  p{
+      font-size: 12px;
+  }
+  .small{
+    padding: 0px 40px;
+}
+.text-title{
+    font-size: 32px;
+    line-height: 3rem;
+}
+.small{
+    padding:0px 40px;
+    h2{
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+}
+li{
+    font-size: 12px;
+}
+.list-item{
+    font-size: 12px;
+}
+}
+@media only screen and (max-width: 414px) {
+  .inside-text{
+      h1{
+          font-size:2rem;
+          line-height: 3rem;
+      }
+  }
+  .small{
+    padding: 0px 40px;
+}
+p{
+    font-size: 10px;
+}
+  .small{
+    padding: 0px 40px;
+}
+h3{
+    font-size:2rem;
+
+}
+h4{
+    font-size:2rem;
+}
+a.nav-link{
+    font-size: 10px;
+    line-height: 20px;
+}
+.text-title{
+    font-size: 32px;
+    line-height: 3rem;
+}
+.small{
+    padding:0px 40px;
+    h2{
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+}
+li{
+    font-size: 12px;
+}
+.list-item{
+    font-size: 12px;
+}
+}

@@ -1,0 +1,275 @@
+<div *ngFor="let conten of content">
+<div class="top-line">
+    <div class="inside-top-line">
+        <div class="text">
+            <div class="inside-text">
+                <h1>{{conten.title11}}</h1>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="section-heading">
+    <div class="container">
+        <div class="row first-row">
+            <h2 class="section-title" *ngIf="conten.title11.length > 0"> </h2>
+    <p>{{conten.description11}}</p>
+        </div>
+        <div class="row d-flex justify-content-around">
+            <div class="">
+                <div class="special-list">
+                    <div class="inside-special-list">
+                        <div class="number">
+                            1
+                        </div>
+                        <h3 class="special-list-title"> {{conten.listTitle11}} </h3>
+                        <p class="special-list-text">  {{conten.listDescription11}} </p>
+                    </div>
+                </div>
+            </div>
+            <div class="">
+                <div class="special-list">
+                    <div class="inside-special-list">
+                        <div class="number">
+                            2
+                        </div>
+                        <h3 class="special-list-title">{{conten.listTitle12}}</h3>
+                        <p class="special-list-text"> {{conten.listDescription12}}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="">
+                <div class="special-list">
+                    <div class="inside-special-list">
+                        <div class="number">
+                            3
+                        </div>
+                        <h3 class="special-list-title">{{conten.listTitle13}}</h3>
+                        <p class="special-list-text">{{conten.listDescription13}}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="">
+                <div class="special-list">
+                    <div class="inside-special-list">
+                        <div class="number">
+                            4
+                        </div>
+                        <h3 class="special-list-title">{{conten.listTitle14}}</h3>
+                        <p class="special-list-text">{{conten.listDescription14}}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="">
+                <div class="special-list" *ngIf="conten.listTitle15.length > 0">
+                    <div class="inside-special-list">
+                        <div class="number">
+                            5
+                        </div>
+                        <h3 class="special-list-title">{{conten.listTitle15}}</h3>
+                        <p class="special-list-text">{{conten.listDescription15}}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="" *ngIf="conten.listTitle16.length > 0">
+                <div class="special-list">
+                    <div class="inside-special-list">
+                        <div class="number">
+                            6
+                        </div>
+                        <h3 class="special-list-title">{{conten.listTitle16}}</h3>
+                        <p class="special-list-text">{{conten.listDescription16}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <h2 class="section-title" *ngIf="conten.title12.length > 0">{{conten.title12}}</h2>
+            <div class="row row-alone small">
+            <p *ngIf="conten.description12.length > 0">{{conten.description12}}</p>
+            <ul *ngIf="conten.list11.length > 0">
+                <li class="list-item">{{conten.list11}}</li>
+                <li class="list-item" *ngIf="conten.list12.length > 0">{{conten.list12}}</li>
+                <li class="list-item" *ngIf="conten.list13.length > 0">{{conten.list13}}</li>
+                <li class="list-item" *ngIf="conten.list14.length > 0">{{conten.list14}}</li>
+            </ul>
+        </div>
+    </div>
+    </div>
+</div>
+<div class="section-image">
+    <div class="container">
+        <div class="row">
+            <img class="img" src="{{conten.image1}}" alt="{{conten.imageAlt1}}">
+        </div>
+    </div>
+</div>
+<div class="section-content" *ngIf="conten.title21.length > 0">
+    <div class="container">
+        <div class="text-center">
+            <h1 class="section-title">{{conten.title21}}</h1>
+            
+            <div class="row text-justify">
+                <div class="col-md-6">
+                    <img class="img" src="{{conten.image2}}" alt="{{conten.imageAlt2}}">
+                </div>
+                <div class="col-md-6 near-image">
+                    <p *ngIf="conten.description21.length > 0">{{conten.description21}}</p>
+                <ul *ngIf="conten.list21.length > 0">
+                    <li *ngIf="conten.list22.length > 0">{{conten.list21}}</li>
+                    <li *ngIf="conten.list22.length > 0">{{conten.list22}}</li>
+                    <li *ngIf="conten.list23.length > 0">{{conten.list23}}</li>
+                    <li *ngIf="conten.list24.length > 0">{{conten.list24}}</li>
+                    <li *ngIf="conten.list25.length > 0">{{conten.list25}}</li>
+                    <li *ngIf="conten.list26.length > 0">{{conten.list26}}</li>
+                    <li *ngIf="conten.list27.length > 0">{{conten.list27}}</li>
+                    <li *ngIf="conten.list28.length > 0">{{conten.list28}}</li>
+                </ul>
+                <p *ngIf="conten.description22.length > 0">{{conten.description22}}</p>
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="section-content" *ngIf="conten.title31.length > 0">
+    <div class="container">
+        <div class="text-center">
+            <h1 class="section-title">{{conten.title31}}</h1>
+            
+            <div class="row text-justify" *ngIf="conten.list31.length > 0">
+                
+                <div class="col-md-6 near-image">
+                    <p *ngIf="conten.list32.length > 0">{{conten.description31}}</p>
+                <ul *ngIf="conten.list31.length > 0">
+                    <li>{{conten.list31}}</li>
+                    <li *ngIf="conten.list32.length > 0">{{conten.list32}}</li>
+                    <li *ngIf="conten.list33.length > 0">{{conten.list33}}</li>
+                    <li *ngIf="conten.list34.length > 0">{{conten.list34}}</li>
+                    <li *ngIf="conten.list35.length > 0">{{conten.list35}}</li>
+                    <li *ngIf="conten.list36.length > 0">{{conten.list36}}</li>
+                    <li *ngIf="conten.list37.length > 0">{{conten.list37}}</li>
+                    <li *ngIf="conten.list38.length > 0">{{conten.list38}}</li>
+                </ul>
+                <p *ngIf="conten.description32.length > 0">{{conten.description32}}</p>
+            </div>
+            <div class="col-md-6">
+                <img  class="img" src="{{conten.image3}}" alt="{{conten.imageAlt3}}">
+            </div>
+        </div>
+        </div>
+    </div>
+</div>
+<div class="section-content" *ngIf="conten.title41.length > 0">
+    <div class="container">
+        <div class="text-center">
+            <h1 class="section-title">{{conten.title41}}</h1>
+            
+            <div class="row text-justify" *ngIf="conten.list41.length > 0">
+                <div class="col-md-6">
+                    <img class="img" src="{{conten.image4}}" alt="{{conten.imageAlt4}}">
+                </div>
+                <div class="col-md-6 near-image">
+                    
+                <ul *ngIf="conten.list41.length > 0">
+                    <p>{{conten.listTitle41}}</p>
+                    <li>{{conten.list41}}</li>
+                    <li *ngIf="conten.list42.length > 0">{{conten.list42}}</li>
+                    <p>{{conten.listTitle42}}</p>
+                    <li *ngIf="conten.list43.length > 0">{{conten.list43}}</li>
+                    <li *ngIf="conten.list44.length > 0">{{conten.list44}}</li>
+                    <p>{{conten.listTitle43}}</p>
+                    <li *ngIf="conten.list45.length > 0">{{conten.list45}}</li>
+                    <li *ngIf="conten.list46.length > 0">{{conten.list46}}</li>
+                    <p>{{conten.listTitle44}}</p>
+                    <li *ngIf="conten.list47.length > 0">{{conten.list47}}</li>
+                    <li *ngIf="conten.list48.length > 0">{{conten.list48}}</li>
+                </ul>
+                <p *ngIf="conten.description42.length > 0">{{conten.description42}}</p>
+            </div>
+        </div>
+        </div>
+    </div>
+</div>
+<div class="section-content" *ngIf="conten.title51.length > 0">
+    <div class="container">
+        <div class="text-center">
+            <h1 class="section-title">{{conten.title51}}</h1>
+            <div class="row text-justify" *ngIf="conten.list51.length > 0 || conten.description51.length > 0">
+                
+                <div class="col-md-6 near-image">
+                    <p *ngIf="conten.description51.length > 0">{{conten.description51}}</p>
+                <ul *ngIf="conten.list51.length > 0">
+                    
+                    <li>{{conten.list51}}</li>
+                    <li *ngIf="conten.list52.length > 0">{{conten.list52}}</li>
+                    <li *ngIf="conten.list53.length > 0">{{conten.list53}}</li>
+                    <li *ngIf="conten.list54.length > 0">{{conten.list54}}</li>
+                    <li *ngIf="conten.list55.length > 0">{{conten.list55}}</li>
+                    <li *ngIf="conten.list56.length > 0">{{conten.list56}}</li>
+                    <li *ngIf="conten.list57.length > 0">{{conten.list57}}</li>
+                    <li *ngIf="conten.list58.length > 0">{{conten.list58}}</li>
+                </ul>
+                <p *ngIf="conten.description52.length > 0">{{conten.description52}}</p>
+            </div>
+            <div class="col-md-6">
+                <img class="img" src="{{conten.imgLong1}}" alt="{{conten.imageLongAlt1}}">
+            </div>
+        </div>
+        </div>
+    </div>
+</div>
+<div class="section-content" *ngIf="conten.title61.length > 0">
+    <div class="container">
+        <div class="text-center">
+            <h1 class="section-title">{{conten.title61}}</h1>
+            <p class="text-justify" *ngIf="conten.description61.length > 0">{{conten.description61}}</p>
+            <div class="row "  *ngIf="conten.list61.length > 0">
+                
+                <div class="col-md-6 near-image">
+                <ul *ngIf="conten.list61.length > 0">
+                    <li>{{conten.list61}}</li>
+                    <li *ngIf="conten.list62.length > 0">{{conten.list62}}</li>
+                    <li *ngIf="conten.list63.length > 0">{{conten.list63}}</li>
+                    <li *ngIf="conten.list64.length > 0">{{conten.list64}}</li>
+                    <li *ngIf="conten.list65.length > 0">{{conten.list65}}</li>
+                    <li *ngIf="conten.list66.length > 0">{{conten.list66}}</li>
+                    <li *ngIf="conten.list67.length > 0">{{conten.list67}}</li>
+                    <li *ngIf="conten.list68.length > 0">{{conten.list68}}</li>
+                </ul>
+                <p *ngIf="conten.description62.length > 0">{{conten.description62}}</p>
+            </div>
+            <div class="col-md-6">
+                <img class="img" src="{{conten.image6}}" alt="{{conten.imageAlt6}}">
+            </div>
+        </div>
+        </div>
+    </div>
+</div>
+<div class="section-content" *ngIf="conten.title71.length > 0">
+    <div class="container ">
+        <div class="text-center">
+            <h1 class="section-title">{{conten.title71}}</h1>
+            <p *ngIf="conten.description71.length > 0">{{conten.description71}}</p>
+            <div class="row text-justify" *ngIf="conten.list71.length > 0">
+                <div class="col-md-6">
+                    <img class="img" src="{{conten.image7}}" alt="{{conten.imageAlt7}">
+                </div>
+                <div class="col-md-6 near-image">
+                <ul *ngIf="conten.list71.length > 0">
+                    <li>{{conten.list71}}</li>
+                    <li *ngIf="conten.list72.length > 0">{{conten.list72}}</li>
+                    <li *ngIf="conten.list73.length > 0">{{conten.list73}}</li>
+                    <li *ngIf="conten.list74.length > 0">{{conten.list74}}</li>
+                    <li *ngIf="conten.list75.length > 0">{{conten.list75}}</li>
+                    <li *ngIf="conten.list76.length > 0">{{conten.list76}}</li>
+                    <li *ngIf="conten.list77.length > 0">{{conten.list77}}</li>
+                    <li *ngIf="conten.list78.length > 0">{{conten.list78}}</li>
+                </ul>
+                <p *ngIf="conten.description72.length > 0">{{conten.description72}}</p>
+            </div>
+        </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<app-footer class="footer" #target></app-footer>

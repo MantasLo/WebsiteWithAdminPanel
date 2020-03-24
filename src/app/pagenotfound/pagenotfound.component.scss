@@ -1,0 +1,32 @@
+.bg{
+    background: url("src/assets/Rakštis Laukinė Orchidėja.jpg")no-repeat center center;
+    background-size: cover;
+    .view {
+    height: 100vh !important;
+    position: relative;
+.slider-text{
+    position: relative;
+      height: calc(70vh + 117px);
+      min-height: 350px;
+      padding-left: 50%;
+  }
+  h1 {
+    font-weight: 700;
+    font-size: 3rem;
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+    text-shadow: 1px 2px black;
+    margin-bottom: 0px!important;
+  }
+  .ab-5{
+    padding-top: 15%; 
+  }
+  h5 {
+    //letter-spacing: 3px;
+    color: #fff;
+    text-shadow: 2px 1px black;
+    margin-top: 0.6rem;
+    
+  }
+}
+}

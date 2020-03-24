@@ -1,0 +1,299 @@
+<div class="bg">
+    <div class="view">
+
+           <div class=" slider-text justify-content-left">
+             <div class="text-center col-sm-12 ab-5">
+                <h1 class="title">
+                    LAUKINĖ ORCHIDĖJA
+                  </h1>
+               <h5 class="title2">BELGŲ AVIGANIŲ MALINUA VEISLYNAS</h5>
+               <h5 class="title2">DRESŪROS MOKYKLA</h5>
+               <h5 class="title2">VIEŠBUTIS</h5>
+             </div>
+        </div>
+      <!-- <div class="new-dogs" (click)=onCardClick(1)>
+          <h2 class="new-dogs-text">NAUJA VADA</h2>
+      </div> -->
+   </div>
+  </div>
+  <div class="description">
+      <div class="inside-desciption">
+          <div class="description-text">
+              <h1 class="text-center title-main">ŠUNŲ PRIEŽIŪROS CENTRAS ŠIAULIUOSE
+              </h1>
+              <p class="text-center">Domėtis kinologija pradėjau prieš 40 metų. Ilgainiui mėgėjiškas domėjimąsis šunimis,</p>
+              <p class="text-center">jų veisimas, dresūra virto profesionaliu užsiėmimu. Dresuotojo darbas, tai kūryba – </p>
+              <p class="text-center">labai atsakinga kūryba, nes tu disponuoji šunų likimu, jų noru „atrasti“ savo gyvenimo</p>
+              <p class="text-center">kelią. Aš dėkingas likimui, kad jis mane veda šiuo keliu....</p>
+          </div>
+      </div>
+  </div>
+  <div class="services">
+      <div class="inside-services d-flex justify-content-around">
+          <div class="cards" (click)=onCardClick(1)>
+              <div class="card-inside">
+                  <div class="card-center">
+                      
+                      <div class="card-name">
+                          <h2>BELGŲ AVIGANIŲ MALINUA VEISLYNAS</h2>
+
+                      </div>
+                  </div>
+
+              </div>
+          </div>
+          <div class="cards" (click)=onCardClick(2)>
+            <div class="card-inside">
+                <div class="card-center">
+                    
+                    <div class="card-name">
+                        <h2>Šunų dresūra</h2>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="cards" (click)=onCardClick(3)>
+            <div class="card-inside">
+                <div class="card-center">
+                    
+                    <div class="card-name">
+                        <h2>Šunų viešbutis</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cards">
+            <div class="card-inside" (click)=onCardClick(4)>
+                <div class="card-center">
+                   
+                    <div class="card-name">
+                        <h2>kaniterapija</h2>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="cards" (click)=onCardClick(5)>
+            <div class="card-inside">
+                <div class="card-center">
+                   
+                    <div class="card-name">
+                        <h2>edukacinės programos</h2>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+      </div>
+  </div>
+  <div class="container">
+      <h2 class="title-renginiai">PASKUTINIAI RENGINIAI</h2>
+
+      <div class="card-container ">          
+        <div class="card-columns">
+        <app-card
+        [card]="card" 
+         *ngFor="let card of content"
+         (cardSelected)= "onCardSelected($event)"
+         >
+        </app-card>
+        </div>
+        </div>
+        <button class=" btn btn-daugiau-info" routerLink="/renginiai">DAUGIAU RENGINIŲ</button>
+  </div>
+
+  <div class="container boxes">
+    <div class="malinua"  style="margin-left: -10px; margin-right: -10px">
+      <div class="row">     
+              <div class="col-md-9">
+                  <div class="row">
+                    <div class="col-md-2">
+                    
+                        <img class="icon icon-img" src="../assets/malinua2.png" alt="">
+                  
+                </div>
+                    <div class="col-md-10">
+                        <h3>MALINUA</h3>
+                        <p>Belgų aviganiai Malinua žavi savo nežabota energija,
+                             noru įtikti šeimininkui, užsidegimu darbui. Šie šunys,
+                              skyrus pakankamai dėmesio jų dresūrai, visuomet atsidėkos 
+                              begaline ištikimybe ir prieraišumu. Malinua pati universaliausia veislė pasaulyje.</p>
+
+                    </div>
+                  </div>
+                  
+
+                  
+              </div>
+              <div class="col-md-3">
+                  <div class="button-container">
+                      <button class="btn btn-malinua" routerLink="/malinua">SUŽINOKITE DAUGIAU</button>
+                  </div>
+                  
+              </div>
+
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-md-4">
+              <div class="about-me1">
+                  <div class="icon">
+                      <div class="icon-inside">
+                        <img class="icon-img" src="../assets/apie treneri.png" alt="">
+                      </div>
+                      <div class="text-inside">
+                          <h5>APIE TRENERĮ</h5>
+                          <p>Kaip žinia, visi šunys gamtos yra apdovanoti 
+                              gebėjimu sėdėti, gulėti, stovėti ir t.t. – pati pagrindinė 
+                              idėja yra ta, kad šuo , visa tai privalo daryti pagal komandą! 
+                              Manau, kad bendromis jėgomis, mes visa tai padarysime!</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-4 color-black">
+              <div class="img">
+                  <img class="dresuotojas" src="../assets/DRESUOTOJAS_be_fono.png" alt="Šūnų treneris teisejas dresuotojas Alfonsas Dauskurdis">
+              </div>
+              <div class="text">
+                  <p>LKD dresuotojas – tarptautinės kategorijos dresūros teisėjas</p>
+              </div>
+              <h5>
+                  ALFONSAS DAUSKURDIS
+              </h5>
+        </div>
+        <div class="col-md-4">
+            <div class="about-me2">
+                <div class="icon">
+                    <div class="icon-inside">
+                        <img class="icon-img" src="../assets/pasiekimai1.png" alt="">
+                    </div>
+                    <div class="text-inside">
+                        <p>- Tarptautinės kategorijos dresūros teisėjas, Lietuvos Kinologų Draugijos dresuotojas</p>
+                            <p>- Specializacija BH-VT, IGP, šunų psichologija, socializacija</p>
+                            <p>- Bendarbiavimas su LKD (Lietuvos Kinologų Draugija), LKD Mokymo centru</p>
+                            <p>- Edukacinių ir parodomųjų programų su šunimis rengimas</p>
+                            <button class="btn btn-daugiau-info" routerLink="/apie-mane">DAUGIAU APIE MANE</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+  </div>
+  <div class="container" style="padding-right:0px!important; padding-left:0px!important">
+    <h2 class="title-renginiai">ATSILIEPIMAI</h2>
+
+    
+      <div class="atsiliepimai">
+        <div class="icon-right">
+                <i (click)="prev()" class="ngx-gallery-icon-content fa fa-arrow-circle-left"></i>
+            </div>
+            <div class="icon-left">
+                <i (click)="next()" class="ngx-gallery-icon-content fa fa-arrow-circle-right"></i>
+                
+          </div>
+
+          <div *ngIf="!mobile">
+        <carousel-component [mode]="'horizontal'" [morePairSlides]="moreSlides" [angle]="degree" #topCarousel>
+
+            
+            <div class="item-carousel" *ngFor="let image of images" >
+                <div class="card-testimotionals" *ngIf="image.image.length > 0">
+                    <div class="side-a">
+                            <div class="testimotionals">
+                                <img class="img" src="{{ image.image }}" alt="">
+                                <!-- <div [ngStyle]="{'background-image': 'url(' + image.image + ')'}"></div> -->
+                            </div>
+                        </div>
+                  
+                        <div class="side-b">
+                            <div class="testimotionals">
+                                
+                                <p class="card-text">{{ image.text }}</p>
+                                <h4 class="card-title">{{ image.title }}</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="alone">
+                         <div *ngIf="image.image.length === 0" class="testimotionals">
+                            <p class="card-text">{{ image.text }}</p> 
+                            <h4 class="card-title">{{ image.title }}</h4>
+                           
+                        </div>              
+                    </div>
+                </div>
+          
+            
+                
+            
+                
+        </carousel-component>
+    </div>
+        <div *ngIf="mobile">
+            <carousel-component [mode]="'horizontal'" [morePairSlides]="moreSlides" [angle]="degree" #topCarousel>
+
+            <div class="item-carousel" *ngFor="let image of images" >
+                <div class="card-testimotionals-mobile" *ngIf="image.image.length > 0">
+                    <div class="side-a">
+                            <div class="testimotionals">
+                                <img class="img-mobile" src="{{ image.image }}" alt="">
+                                <!-- <div [ngStyle]="{'background-image': 'url(' + image.image + ')'}"></div> -->
+                            </div>
+                        </div>
+                  
+                        <div class="side-b">
+                            <div class="testimotionals">
+                                
+                                <p class="card-text">{{ image.text }}</p>
+                                <h4 class="card-title">{{ image.title }}</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="alone-mobile">
+                        <div *ngIf="image.image.length === 0" class="testimotionals">
+                           <p class="card-text">{{ image.text }}</p> 
+                           <h4 class="card-title">{{ image.title }}</h4>
+                          
+                       </div>              
+                   </div>
+            </div>
+            </carousel-component>
+        </div>
+      </div>
+</div>
+
+<div class="container" >
+    <h2 class="title-renginiai">MŪSŲ PARTNERIAI</h2>
+    <div class="row" style="margin-top: 80px;">
+        <div class="col-md-3" (click)="linkTo('https://www.mesirsunys.lt')">
+            <img class="img-partner"  src="../assets/partneriai/Lietuvos kinologu draugijos mokymo centras.png" alt="">
+        </div>
+        <div class="col-md-3" (click)="linkTo('http://www.kinologija.lt')">
+            <img class="img-partner" src="../assets/partneriai/lietuvos-kinologu-draugija.png" alt="">
+        </div>
+        <div class="col-md-3" (click)="linkTo('https://noriugyvuno.lt')">
+            <img class="img-partner" src="../assets/partneriai/Noriu gyvuno.lt.png" alt="">
+        </div>
+        <div class="col-md-3" (click)="linkTo('http://www.sveikasaugintinis.lt')">
+            <img class="img-partner" src="../assets/partneriai/R.Rimgailos veterinarijos klinika.png" alt="">
+        </div>
+    </div>
+    <div class="row" style="margin-top: 40px;">
+        <div class="col-md-3">
+        </div>
+        <div class="col-md-3" (click)="linkTo('http://uodegincius.lt')">
+            <img class="img-partner" src="../assets/partneriai/Sunu viesbutis Uodegincius.png" alt="">
+        </div>
+        <div class="col-md-3" (click)="linkTo('https://www.vetkabinetas.lt')">
+            <img class="img-partner" src="../assets/partneriai/veterinarijos paslaugu kabinetas.jpg" alt="">
+        </div>
+        <div class="col-md-3">
+        </div>
+    </div>
+</div>
+
+<app-server></app-server>
+
+
+<app-footer class="footer" #target></app-footer>

@@ -1,0 +1,50 @@
+<div *ngFor="let conten of content">
+    <div class="top-line">
+        <div class="container">
+        <div class="inside-top-line">
+            <div class="text">
+                <div class="inside-text">
+                    <h1>BELGŲ AVIGANIS - MALINUA</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="container container-top">
+        <div class="row first-row" >
+            <div class="col-md-6">
+                <img class="img img-rotate" src="{{conten.image1}}" alt="{{conten.imageAlt1}}">
+            </div>
+            <div class="col-md-6 near-image">
+                <p *ngIf="conten.description11.length > 0">{{conten.description11}}</p>
+                <p *ngIf="conten.description12.length > 0">{{conten.description12}}</p>
+                <p *ngIf="conten.description13.length > 0">{{conten.description13}}</p>
+            </div>
+        </div>
+        <div *ngIf="conten.description14.length > 0" class="row small">
+            <p *ngIf="conten.description14.length > 0">{{conten.description14}}</p>
+            <p *ngIf="conten.description15.length > 0">{{conten.description15}}</p>
+            <p *ngIf="conten.description16.length > 0">{{conten.description16}}</p>
+            <p *ngIf="conten.description17.length > 0">{{conten.description17}}</p>
+
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <img class="img" src="{{conten.image2}}" alt="{{conten.imageAlt2}}">
+            </div>
+            <div class="col-md-6 near-image">
+                <p *ngIf="conten.description21.length > 0">{{conten.description21}}</p>
+            </div>
+        </div>
+        <div class="row first-row small" *ngIf="conten.description22.length > 0">
+            <p >{{conten.description22}}</p>
+            <p *ngIf="conten.description23.length > 0">{{conten.description23}}</p>
+            <p *ngIf="conten.description24.length > 0">{{conten.description24}}</p>
+            <p *ngIf="conten.description25.length > 0">{{conten.description25}}</p>
+        </div>
+        <div class="row">
+            <img class="img" src="{{conten.image3}}" alt="{{conten.imageAlt1}}">
+        </div>
+    </div>
+</div>
+<app-footer class="footer" #target></app-footer>
