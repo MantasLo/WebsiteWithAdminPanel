@@ -139,6 +139,8 @@ app.post('/send', function (req, res) {
     replyTo: 'laukineorchideja.malinois@gmail.com'
   }
   
+  console.log('server.ts   app.post method  '  + mailOptions);
+  
   if (senderName === '') {
     res.status(400);
     res.send({
@@ -173,6 +175,8 @@ app.post('/send', function (req, res) {
   }
 
   transporter.sendMail(mailOptions, function (error, response) {
+    console.log('server.ts   transporter.sendMail function  ' + transporter);
+    
     if (error) {
       console.log('Klaida, prašome užregistruoti gedimą el. paštu info@ambimax.lt');
       res.end('error');
