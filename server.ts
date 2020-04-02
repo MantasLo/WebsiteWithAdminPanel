@@ -132,7 +132,7 @@ app.post('/send', function (req, res) {
   //let copyToSender = req.body.contactFormCopy;
 
   let mailOptions = {
-    to: ['mantasdaus@gmail.com'], // Enter here the email address on which you want to send emails from your customers
+    to: ['mantasdaus@gmail.com'], //there should be email of final form receiver. 
     from: senderName,
     subject: 'laukineorchideja.lt',
     text: 'Užklausos siuntėjo vardas: ' + senderName + ' , el. pašto adresas: ' + senderEmail + ' , telefono numeris: ' + messageText + ' , kliento žinutė: ' + simpleText,
