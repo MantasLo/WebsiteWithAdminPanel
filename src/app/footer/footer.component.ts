@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { MouseEvent } from '@agm/core';
 import { Router } from '@angular/router';
+import { ContactService } from '../contact.service';
 
 @Component({
   selector: 'app-footer',
