@@ -36,6 +36,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ParamaComponent } from './parama/parama.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { ServerComponent } from './server/server.component';
+import { ContactService } from './contact.service';
 // import { MatVideoModule } from 'mat-video';
 
 
@@ -78,7 +79,7 @@ import { ServerComponent } from './server/server.component';
     ReactiveFormsModule
 
   ],
-  providers: [PaslaugosService],
+  providers: [PaslaugosService, ContactService],
   bootstrap: [AppComponent]
 })
 export class AppModule {
