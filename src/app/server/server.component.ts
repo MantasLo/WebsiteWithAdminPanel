@@ -60,7 +60,7 @@ export class ServerComponent implements OnInit {
     var className = ".anketa";
     const elementList = document.querySelectorAll(className);
     const element = elementList[0] as HTMLElement;
-    element.scrollIntoView({ behavior: 'smooth' });
+    element.scrollIntoView({block: "end", inline: "nearest"});
     this.contactService.afterScroll();
 
   }
