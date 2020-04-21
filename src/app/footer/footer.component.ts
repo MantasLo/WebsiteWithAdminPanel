@@ -8,17 +8,30 @@ import { Router } from '@angular/router';
   styleUrls: ['./footer.component.scss']
 })
 export class FooterComponent implements OnInit {
+  
+  contact:boolean = false;
 
-  constructor(private router: Router) { }
+  constructor(private router: Router, private contactService: ContactService) { }
 
   ngOnInit() {
   }
 
   onPressed():void {
+    this.contactService.contactButtonPressed();
+    if(this.router.url === '/namu-puslapis'){
+      this.scroll();
+    }
+  }
+  
+   scroll(){
     var className = ".anketa";
     const elementList = document.querySelectorAll(className);
     const element = elementList[0] as HTMLElement;
-    element.scrollIntoView({ behavior: 'smooth' });
+    element.scrollIntoView({block: "end", inline: "nearest"});
+    window.scrollBy(200,400);
+
+    this.contactService.afterScroll();
+
   }
 
   zoom: number = 10;
