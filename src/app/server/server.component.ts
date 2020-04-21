@@ -3,6 +3,7 @@ import { Validators, FormGroup, FormBuilder } from '@angular/forms';
 import { MailserviceService } from '../mailservice.service';
 import { GalerijaService } from '../galerija/galerija.service';
 import { ActivatedRoute } from '@angular/router';
+import { ContactService } from '../contact.service';
 
 @Component({
   selector: 'app-server',
