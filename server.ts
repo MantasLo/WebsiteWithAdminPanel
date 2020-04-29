@@ -82,8 +82,8 @@ const transporter = nodemailer.createTransport({
   auth: {
     //user name and password of email that works like server
     
-    user: 'laukineorchideja.malinois@gmail.com', // Enter here email address from which you want to send emails
-    pass: 'rakstis147' // Enter here password for email account from which you want to send emails
+    user: 'spincrewserver@gmail.com', // Enter here email address from which you want to send emails
+    pass: 'spincrewserver11' // Enter here password for email account from which you want to send emails
   },
   tls: {
   rejectUnauthorized: false
@@ -136,7 +136,7 @@ app.post('/send', function (req, res) {
     from: senderName,
     subject: 'laukineorchideja.lt',
     text: 'Užklausos siuntėjo vardas: ' + senderName + ' , el. pašto adresas: ' + senderEmail + ' , telefono numeris: ' + messageText + ' , kliento žinutė: ' + simpleText,
-    replyTo: 'laukineorchideja.malinois@gmail.com'
+    replyTo: 'dausmantas@gmail.com'
   }
   
   console.log('server.ts   app.post method  '  + mailOptions);
