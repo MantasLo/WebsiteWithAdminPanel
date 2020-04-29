@@ -38,6 +38,7 @@ export class FooterComponent implements OnInit {
   zoom: number = 10;
   
   // initial center position for the map
+
   lat: number = 55.9320034;
   lng: number = 23.3555833;
 
@@ -56,7 +57,7 @@ export class FooterComponent implements OnInit {
   markerDragEnd(m: marker, $event: MouseEvent) {
     console.log('dragEnd', m, $event);
   }
-  
+  //longitude and latitude coordinates for points  1 and 2.
   markers: marker[] = [
 	  {
 		  lat: 55.9251539,
