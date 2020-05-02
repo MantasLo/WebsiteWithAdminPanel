@@ -95,7 +95,8 @@ export const GALERIJA: any = [
         month: '01',
         day: '01',
         logoUrl1: "../../assets/LOGO/logo_vektorius.svg",
-        logoUrl2: ""
+        logoUrl2: "",
+        cardImg: ''
     },
     {
         id: 2,
@@ -193,7 +194,8 @@ export const GALERIJA: any = [
         month: '01',
         day: '01',
         logoUrl1: "../../assets/LOGO/logo_vektorius.svg",
-        logoUrl2: ""
+        logoUrl2: "",
+        cardImg: ''
     },
     {
         id: 3,
@@ -291,7 +293,8 @@ export const GALERIJA: any = [
         month: '01',
         day: '01',
         logoUrl1: "../../assets/LOGO/logo_vektorius.svg",
-        logoUrl2: ""
+        logoUrl2: "",
+        cardImg: ''
     },
     {
         id: 4,
@@ -389,7 +392,8 @@ export const GALERIJA: any = [
         month: '01',
         day: '01',
         logoUrl1: "../../assets/LOGO/logo_vektorius.svg",
-        logoUrl2: ""
+        logoUrl2: "",
+        cardImg: ''
     },
     
   
@@ -489,7 +493,8 @@ export const GALERIJA: any = [
         month: '01',
         day: '01',
         logoUrl1: "../../assets/LOGO/logo_vektorius.svg",
-        logoUrl2: ""
+        logoUrl2: "",
+        cardImg: ''
     },
     {
         id: 8,
@@ -587,7 +592,8 @@ export const GALERIJA: any = [
         month: '01',
         day: '01',
         logoUrl1: "../../assets/LOGO/logo_vektorius.svg",
-        logoUrl2: ""
+        logoUrl2: "",
+        cardImg: ''
     },
     {
         id: 9,
@@ -685,7 +691,8 @@ export const GALERIJA: any = [
         month: '01',
         day: '01',
         logoUrl1: "../../assets/LOGO/logo_vektorius.svg",
-        logoUrl2: ""
+        logoUrl2: "",
+        cardImg: ''
     },
     {
         id: 10,
@@ -783,7 +790,8 @@ export const GALERIJA: any = [
         month: '01',
         day: '01',
         logoUrl1: "../../assets/LOGO/logo_vektorius.svg",
-        logoUrl2: ""
+        logoUrl2: "",
+        cardImg: ''
     },
     {
         id: 11,
@@ -881,7 +889,8 @@ export const GALERIJA: any = [
         month: '01',
         day: '01',
         logoUrl1: "../../assets/LOGO/logo_vektorius.svg",
-        logoUrl2: ""
+        logoUrl2: "",
+        cardImg: ''
     },
     {
         id: 12,
@@ -979,7 +988,8 @@ export const GALERIJA: any = [
         month: '01',
         day: '01',
         logoUrl1: "../../assets/LOGO/logo_vektorius.svg",
-        logoUrl2: ""
+        logoUrl2: "",
+        cardImg: ''
     },
     {
         id: 13,
@@ -1077,7 +1087,8 @@ export const GALERIJA: any = [
         month: '01',
         day: '01',
         logoUrl1: "../../assets/LOGO/logo_vektorius.svg",
-        logoUrl2: ""
+        logoUrl2: "",
+        cardImg: ''
     },
     {
         id: 14,
@@ -1175,7 +1186,8 @@ export const GALERIJA: any = [
         month: '01',
         day: '01',
         logoUrl1: "../../assets/LOGO/logo_vektorius.svg",
-        logoUrl2: ""
+        logoUrl2: "",
+        cardImg: ''
     },
     {
         id: 15,
@@ -1273,6 +1285,7 @@ export const GALERIJA: any = [
         month: '01',
         day: '01',
         logoUrl1: "../../assets/LOGO/logo_vektorius.svg",
-        logoUrl2: ""
+        logoUrl2: "",
+        cardImg: ''
     }
 ]
