@@ -94,5 +94,6 @@ export interface Card {
         month: number,
         day: number,
         logoUrl1:string,
-        logoUrl2:string
+        logoUrl2:string,
+        cardImg:string
 }
