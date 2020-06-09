@@ -22,7 +22,7 @@
 
 // Other optional depending on your application configuration
 
-
+import 'mutationobserver-shim';
 const domino = require('domino');
 const fs = require('fs');
 const path = require('path');
@@ -40,6 +40,7 @@ const window = domino.createWindow(template);
 (global as any).FocusEvent = window.FocusEvent;
 (global as any).PointerEvent = window.PointerEvent;
 (global as any).HTMLElement = window.HTMLElement;
+(global as any).MutationObserver = window.MutationObserver;
 (global as any).HTMLElement.prototype.getBoundingClientRect = () => {
     return {
       left: '',
