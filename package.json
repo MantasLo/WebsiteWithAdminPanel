@@ -13,7 +13,7 @@
     "compile:server": "webpack --config webpack.server.config.js --progress --colors",
     "serve:ssr": "firebase serve",
     "build:ssr": "npm run build:client-and-server-bundles && npm run compile:server && npm run build:functions",
-    "build:client-and-server-bundles": "ng build --prod && ng run orchideja:server:production --bundleDependencies none"
+    "build:client-and-server-bundles": "ng build --prod --optimization=false && ng run orchideja:server:production --bundleDependencies none"
   },
   "private": true,
   "dependencies": {
@@ -23,6 +23,7 @@
     "@angular/common": "~8.2.7",
     "@angular/compiler": "~8.2.7",
     "@angular/core": "~8.2.7",
+    "@angular/fire": "^5.4.2",
     "@angular/forms": "~8.2.7",
     "@angular/material": "^8.2.3",
     "@angular/platform-browser": "~8.2.7",
@@ -40,7 +41,10 @@
     "cors": "^2.8.5",
     "domino": "^2.1.4",
     "express": "^4.15.2",
+    "firebase": "^6.6.2",
+    "firebase-functions": "^3.11.0",
     "font-awesome": "^4.7.0",
+    "fs-extra": "^9.0.1",
     "hammerjs": "^2.0.8",
     "igniteui-angular": "^8.2.19",
     "jquery": "^3.4.1",

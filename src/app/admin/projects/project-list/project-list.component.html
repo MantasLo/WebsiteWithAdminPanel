@@ -1,0 +1,24 @@
+<mat-spinner *ngIf="isLoading"></mat-spinner>
+<mat-accordion multi="true" *ngIf="projects.length > 0 && !isLoading">
+  <mat-expansion-panel *ngFor="let project of projects">
+    <mat-expansion-panel-header>
+      <strong>{{ project.title }}</strong>
+    </mat-expansion-panel-header>
+    <div>
+      {{project.description}}
+    </div>
+    <div class="image-preview">
+      <div class="image-container" *ngFor="let url of project.urls">
+        <img [src]="url" [alt]="project.title">
+      </div>
+    </div>
+    <p>{{ project.content }}</p>
+    <mat-action-row>
+      <a mat-button color="primary" [routerLink]="['/admin_prisijungimas/edit', project.id]">EDIT</a>
+      <button mat-button color="warn" (click)="onDelete(project.id)">DELETE</button>
+    </mat-action-row>
+  </mat-expansion-panel>
+</mat-accordion>
+<!--<mat-paginator [length]="projects.length" [pageSizeOptions]="pageSizeOptions"-->
+<!--  *ngIf="projects.length > 0"></mat-paginator>-->
+<p class="info-text mat-body-1" *ngIf="projects.length <= 0 && !isLoading">No projects added yet!</p>

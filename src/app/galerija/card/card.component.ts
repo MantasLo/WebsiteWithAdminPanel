@@ -12,7 +12,7 @@ export class CardComponent implements OnInit {
   @Input()
   card: Card;
   id: number;
-  title:string;
+  title: string;
 
   @Input()
   index: number;
@@ -29,14 +29,13 @@ export class CardComponent implements OnInit {
 
   ngOnInit() {
   }
-  
-  onCardClick(){
-    this.id = this.card.id - 1;
-    this.title = this.card.description;
-    this.router.navigate(["/renginiai/" + this.title] );
 
-    //this.router.navigate(["/projektai/" + this.title],  { queryParams: { pavadinimas: this.title } );
-    
+  onCardClick() {
+    this.id = this.card.id;
+    this.title = this.card.description;
+    this.router.navigate(['/renginiai/' + this.id] );
+
+    // this.router.navigate(["/projektai/" + this.title],  { queryParams: { pavadinimas: this.title } );
 
     this.cardSelected.emit(this.card);
   }

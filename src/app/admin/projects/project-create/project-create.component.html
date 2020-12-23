@@ -1,0 +1,96 @@
+<mat-card>
+  <mat-spinner *ngIf="isLoading"></mat-spinner>
+  <form [formGroup]="form" (submit)="onSaveProject()" *ngIf="!isLoading">
+    <mat-form-field>
+      <input matInput type="text" formControlName="title" placeholder="Project Title*">
+      <mat-error *ngIf="form.get('title').invalid">Please enter a project title.</mat-error>
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput [matDatepicker]="datePicker" placeholder="Date*" [formControl]="dateControl">
+      <mat-datepicker-toggle matSuffix [for]="datePicker"></mat-datepicker-toggle>
+      <mat-datepicker #datePicker></mat-datepicker>
+      <mat-error *ngIf="dateControl.invalid">
+        Invalid date
+      </mat-error>
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput formControlName="description" placeholder="Description*"/>
+      <mat-error *ngIf="form.get('description').invalid">Please enter a description.</mat-error>
+    </mat-form-field>
+    <div>
+      <button mat-stroked-button type="button" (click)="ImagePicker.click()">Pick Icons*</button>
+      <input type="file" #ImagePicker multiple (change)="onIconPicked($event)">
+    </div>
+    <div class="image-preview">
+      <div class="image-container" *ngFor="let image of imagePreview; let i = index">
+        <img [src]="image" [alt]="form.value.title">
+        <mat-icon class="clear-image" (click)="removeIcon(i)">clear</mat-icon>
+      </div>
+    </div>
+    <div [ngStyle]="{'margin-top': imagePreview?.length ? 0 : '1rem'}">
+      <button mat-stroked-button type="button" (click)="PrimaryLogoPicker.click()">Pick Primary Logo</button>
+      <input type="file" #PrimaryLogoPicker multiple (change)="onImageFieldPicked($event, 'primaryLogoPreview', 'logoUrl1')">
+    </div>
+    <div class="image-preview" *ngIf="primaryLogoPreview">
+      <div class="image-container">
+        <img [src]="primaryLogoPreview" [alt]="form.value.title">
+        <mat-icon class="clear-image" (click)="removeImageField('primaryLogoPreview', 'logoUrl1')">clear</mat-icon>
+      </div>
+    </div>
+    <div [ngStyle]="{'margin-top': primaryLogoPreview ? 0 : '1rem'}">
+      <button mat-stroked-button type="button" (click)="SecondaryLogoPicker.click()">Pick Secondary Logo</button>
+      <input type="file" #SecondaryLogoPicker (change)="onImageFieldPicked($event, 'secondaryLogoPreview', 'logoUrl2')">
+    </div>
+    <div class="image-preview" *ngIf="secondaryLogoPreview">
+      <div class="image-container">
+        <img [src]="secondaryLogoPreview" [alt]="form.value.title">
+        <mat-icon class="clear-image" (click)="removeImageField('secondaryLogoPreview', 'logoUrl2')">clear</mat-icon>
+      </div>
+    </div>
+    <div [ngStyle]="{'margin-top': secondaryLogoPreview ? 0 : '1rem'}">
+      <button mat-stroked-button type="button" (click)="CardImagePicker.click()">Pick Card Image</button>
+      <input type="file" #CardImagePicker (change)="onImageFieldPicked($event, 'cardImagePreview', 'cardImg')">
+    </div>
+    <div class="image-preview" *ngIf="cardImagePreview">
+      <div class="image-container">
+        <img [src]="cardImagePreview" [alt]="form.value.title">
+        <mat-icon class="clear-image" (click)="removeImageField('cardImagePreview', 'cardImg')">clear</mat-icon>
+      </div>
+    </div>
+    <div [ngStyle]="{'margin-top': cardImagePreview ? 0 : '1rem'}">
+      <button mat-stroked-button type="button" (click)="VideoPicker.click()">Pick Video</button>
+      <input type="file" #VideoPicker (change)="onImageFieldPicked($event, 'videoPreview', 'videoUrl1')">
+    </div>
+    <div *ngIf="videoPreview">
+      <div class="video-container">
+        <video controls>
+          <source [src]="videoPreview" type="video/mp4">
+        </video>
+        <mat-icon class="clear-image" (click)="removeImageField('videoPreview', 'videoUrl1')">clear</mat-icon>
+      </div>
+    </div>
+    <mat-form-field>
+      <textarea matInput rows="4" formControlName="longDescription1" placeholder="Long Description 1"></textarea>
+    </mat-form-field>
+    <mat-form-field>
+      <textarea matInput rows="4" formControlName="longDescription2" placeholder="Long Description 2"></textarea>
+    </mat-form-field>
+    <mat-form-field>
+      <textarea matInput rows="4" formControlName="longDescription3" placeholder="Long Description 3"></textarea>
+    </mat-form-field>
+    <mat-form-field>
+      <textarea matInput rows="4" formControlName="longDescription4" placeholder="Long Description 4"></textarea>
+    </mat-form-field>
+    <mat-form-field>
+      <textarea matInput rows="4" formControlName="longDescription5" placeholder="Long Description 5"></textarea>
+    </mat-form-field>
+    <mat-form-field>
+      <textarea matInput rows="4" formControlName="longDescription6" placeholder="Long Description 6"></textarea>
+    </mat-form-field>
+    <div fxLayout="row" class="required">*Required</div>
+
+    <button mat-raised-button color="accent" type="submit">Save Project</button>
+
+
+  </form>
+</mat-card>

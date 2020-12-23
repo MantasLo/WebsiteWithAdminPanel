@@ -2,7 +2,7 @@
 
 
 <div class="content-wrap">
-<div class="header" #stickyMenu [class.sticky] = "sticky" [@slideInOut]="helpMenuOpen">
+<div class="header" #stickyMenu [class.sticky] = "sticky" [@slideInOut]="helpMenuOpen" *ngIf="displayHeader">
   <div class="inside-header">
     <div class="logo">
       <a routerLink="namu-puslapis" (click)="onActivate($event)">

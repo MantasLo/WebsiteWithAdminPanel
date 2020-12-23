@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { GALERIJA } from 'src/galerija.db' 
 import { Card } from 'src/app/model/card';
+import {ProjectsService} from '../admin/projects/projects.service';
+import {AngularFireStorage} from '@angular/fire/storage';
+import {GalerijaService} from './galerija.service';
+import {take} from 'rxjs/operators';
 
 
 @Component({
@@ -9,13 +12,21 @@ import { Card } from 'src/app/model/card';
   styleUrls: ['./galerija.component.scss']
 })
 export class GalerijaComponent implements OnInit {
-  allcontent = GALERIJA;
+  allcontent = [];
 
-  //allcontent = [];
-
-  constructor() { }
+  constructor(protected projectsService: ProjectsService, private storage: AngularFireStorage,
+              protected galerijaService: GalerijaService) { }
 
   ngOnInit() {
+    if (!this.galerijaService.allcontent.length) {
+      this.galerijaService.initializeProjects();
+      this.galerijaService.contentSubject.pipe(take(1)).subscribe((content: any[]) => {
+        this.allcontent = content;
+        console.log(content);
+      });
+    } else {
+      this.allcontent = this.galerijaService.allcontent;
+    }
   }
 
   p:any;
@@ -24,7 +35,7 @@ export class GalerijaComponent implements OnInit {
 
   onCardSelected(card: Card){
 
-    
+
     //window.location.href = _url;
 
     //make hyperlink here

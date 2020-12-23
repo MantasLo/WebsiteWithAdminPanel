@@ -20,7 +20,7 @@ import { LastGaleryComponent } from './last-galery/last-galery.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FooterComponent } from './footer/footer.component';
 
-import { CarouselModule } from "ngx-carousel-lib";
+import { CarouselModule } from 'ngx-carousel-lib';
 
 import { AgmCoreModule } from '@agm/core';
 
@@ -37,8 +37,30 @@ import { ParamaComponent } from './parama/parama.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { ServerComponent } from './server/server.component';
 import { ContactService } from './contact.service';
+import {AdminComponent} from './admin/admin.component';
+import {AngularFireModule} from '@angular/fire';
+import {AngularFirestoreModule} from '@angular/fire/firestore';
+import {environment} from '../environments/environment';
+import {AdminHeaderComponent} from './admin/header/admin-header.component';
+import {
+  MatButtonModule,
+  MatCardModule, MatDatepickerModule,
+  MatExpansionModule,
+  MatFormFieldModule, MatIconModule, MatInputModule, MatNativeDateModule,
+  MatPaginatorModule,
+  MatProgressSpinnerModule,
+  MatToolbarModule
+} from '@angular/material';
+import {ProjectListComponent} from './admin/projects/project-list/project-list.component';
+import {ProjectCreateComponent} from './admin/projects/project-create/project-create.component';
+import {LoginComponent} from './admin/auth/login/login.component';
+import {AngularFireAuth} from '@angular/fire/auth';
+import {AngularFireStorage} from '@angular/fire/storage';
+import {AngularFireAuthGuard} from '@angular/fire/auth-guard';
+import {AngularFireFunctionsModule} from '@angular/fire/functions';
 // import { MatVideoModule } from 'mat-video';
-
+import 'firebase/auth';
+import 'firebase/firestore';
 
 @NgModule({
   declarations: [
@@ -60,10 +82,17 @@ import { ContactService } from './contact.service';
     DropdownInsideDirective,
     ParamaComponent,
     PagenotfoundComponent,
-    ServerComponent
+    ServerComponent,
+
+    //  Admin
+    AdminComponent,
+    AdminHeaderComponent,
+    LoginComponent,
+    ProjectCreateComponent,
+    ProjectListComponent,
   ],
   imports: [
-    BrowserModule.withServerTransition({ appId: 'orchideja' }),
+    BrowserModule.withServerTransition({appId: 'orchideja'}),
     AppRoutingModule,
     BrowserAnimationsModule,
     // MatVideoModule,
@@ -72,14 +101,30 @@ import { ContactService } from './contact.service';
       apiKey: 'AIzaSyCh1FH8sRTSn7nzcBa4vNII00bJSwg1hyg'
     }),
     NgxGalleryModule,
-    //MatSidenavModule,
+    // MatSidenavModule,
     IgxNavigationDrawerModule,
     HttpClientModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+
+    //  Admin
+    AngularFireModule.initializeApp(environment.firebaseConfig),
+    AngularFirestoreModule,
+    AngularFireFunctionsModule,
+    MatButtonModule,
+    MatCardModule,
+    MatExpansionModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatPaginatorModule,
+    MatProgressSpinnerModule,
+    MatToolbarModule,
+    MatDatepickerModule,
+    MatNativeDateModule,
+    MatIconModule,
 
   ],
-  providers: [PaslaugosService, ContactService],
+  providers: [AngularFireAuth, PaslaugosService, ContactService, AngularFireStorage, AngularFireAuthGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule {
