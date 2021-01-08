@@ -5,13 +5,13 @@
 export const environment = {
   production: false,
   firebaseConfig: {
-    apiKey: 'AIzaSyAqKBha6CsFhuxxZXQ1SvkBJwk7YOAnd_Q',
-    authDomain: 'orchideja-3cfe2.firebaseapp.com',
-    databaseURL: 'https://orchideja-3cfe2.firebaseio.com',
-    projectId: 'orchideja-3cfe2',
-    storageBucket: 'orchideja-3cfe2.appspot.com',
-    messagingSenderId: '236299617379',
-    appId: '1:236299617379:web:6481064d6fcaea0e8e6456',
+    apiKey: 'AIzaSyAHrXZCYSHxDQpIBt-EHhjG4rL-QnZyODk',
+    authDomain: 'laukineorchideja-97437.firebaseapp.com',
+    databaseURL: 'https://laukineorchideja-97437.firebaseio.com',
+    projectId: 'laukineorchideja-97437',
+    storageBucket: 'laukineorchideja-97437.appspot.com',
+    messagingSenderId: '878540412142',
+    appId: '1:878540412142:web:e6211e916f2c50a87b0fff',
     measurementId: 'G-CB2FZEPNWH'
   }
 };
