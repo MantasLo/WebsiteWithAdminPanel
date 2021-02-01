@@ -1,8 +1,7 @@
-
 {
 "name": "functions",
 "scripts": {
-"build": "node cp-angular && node tsc",
+"build": "node tsc",
 "serve": "npm run build && firebase serve --only functions",
 "shell": "npm run build && firebase functions:shell",
 "start": "npm run shell",
