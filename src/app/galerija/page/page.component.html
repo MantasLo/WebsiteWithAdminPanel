@@ -1,0 +1,46 @@
+<section class="bg-light">
+    <div class="container top">
+
+      <div class="row top-line">
+        <div class="col-md-10">
+          <div class="title"><h1>{{card?.description}}</h1>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="row-buttons">
+
+<a  name="VISI RENGINIAI" class="btn btn-daugiau-info" routerLink="/renginiai">VISI RENGINIAI</a>
+  </div>
+        </div>
+      </div>
+      <div class="row" *ngIf="card?.iconUrl1.length > 0">
+        <div class="col-md-7">
+          <div class="galery">
+            <ngx-gallery [options]="galleryOptions" [images]="galleryImages"></ngx-gallery>
+          </div>
+        </div>
+        <div class="col-md-5">
+         <div class="d-flex flex-row">
+           <img *ngIf="card?.logoUrl1.length > 0" class="d-flex justify-content-around img" src="{{card?.logoUrl1}}" alt="">
+          <img *ngIf="card?.logoUrl2.length > 0" class="d-flex justify-content-around img" src="{{card?.logoUrl2}}" alt="">
+
+          <p style="padding-left:20px" class="d-flex justify-content-around" *ngIf="card?.longDescription1.length > 0">{{card?.longDescription1}}</p>
+         </div>
+            <p *ngIf="card?.longDescription2.length > 0">{{card?.longDescription2}}</p>
+            </div>
+        </div>
+
+          <div class="max-width-1024" *ngIf="card?.videoUrl1.length > 0">
+            <div class="embed-responsive embed-responsive-16by9" id="player">
+            </div>
+          </div>
+            <div class="row line">
+          <p class="full-width" *ngIf="card?.longDescription3.length > 0">{{card?.longDescription3}}</p>
+          <p class="full-width" *ngIf="card?.longDescription4.length > 0">{{card?.longDescription4}}</p>
+          <p class="full-width" *ngIf="card?.longDescription5.length > 0">{{card?.longDescription5}}</p>
+          <p class="full-width" *ngIf="card?.longDescription6.length > 0">{{card?.longDescription6}}</p>
+        </div>
+      </div>
+
+</section>
+<app-footer class="footer" #target></app-footer>

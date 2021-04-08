@@ -1,0 +1,46 @@
+mat-form-field,
+textarea {
+  width: 100%;
+}
+
+mat-spinner {
+  margin: auto;
+}
+
+input[type="file"] {
+  visibility: hidden;
+}
+
+.image-preview {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+
+.image-container {
+  height: 5rem;
+  margin: 1rem 0;
+}
+
+.image-container img {
+  height: 100%;
+  max-width: 176px;
+  padding: 2px;
+}
+
+.video-container {
+  height: 15rem;
+  margin: 1rem 0;
+}
+
+.video-container video {
+  height: 100%;
+}
+
+.clear-image {
+  color: red;
+}
+
+.required {
+  font-style: italic;
+  margin-bottom: 20px;
+}

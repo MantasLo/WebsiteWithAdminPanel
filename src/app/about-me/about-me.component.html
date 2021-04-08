@@ -1,0 +1,89 @@
+<div *ngFor="let content of allcontent">
+    
+    <div class="top-line">
+        <div class="container">
+        <div class="inside-top-line">
+            
+                <div class="text">
+                <div class="inside-text">
+                    <h1>{{content.title11}}</h1>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+<div class="container">
+    <div class="row first-row">
+        <div class="col-md-6">
+            <div class="near-image">
+<h2 class="section-title" *ngIf="content.title21.length > 0">{{content.title21}}</h2>
+            <p class="texts-near-image" *ngIf="content.description21.length > 0">{{content.description21}} </p>
+            <p *ngIf="content.description22.length > 0">{{content.description22}} </p>
+            <p *ngIf="content.description23.length > 0">{{content.description23}} </p>
+            </div>
+            
+        </div>
+        <div class="col-md-6">
+            <img class="img" *ngIf="content.image1.length > 0" src="{{content.image1}}" alt="{{content.imageAlt1}}">
+        </div>
+    </div>
+    <div class="row qoute-row">
+        <div class="malinua" *ngIf="content.qoute1.length > 0" >
+            <div class="qoute">
+                <p class="qoute-text">{{content.qoute1}}</p>
+            </div>
+        </div>
+    </div>
+        <div class="row">
+            <h2 class="section-title" *ngIf="content.title31.length > 0">{{content.title31}}</h2>
+            <p *ngIf="content.description31.length > 0">{{content.description31}} </p>
+            <p *ngIf="content.description32.length > 0">{{content.description32}} </p>
+            <p *ngIf="content.description33.length > 0">{{content.description33}} </p>
+        </div>
+
+        <div class="row" *ngIf="content.image31.length > 0">
+            <div class="col-md-6">
+                <img class="img" src="{{content.image31}}" alt="{{content.imageAlt31}}">
+            </div>
+            <div class="col-md-6 near-image">
+                <div class="near-image">
+                <h4 *ngIf="content.title41.length > 0">{{content.title41}}</h4>
+                <p *ngIf="content.description41.length > 0">{{content.description41}}</p>
+                <p *ngIf="content.description42.length > 0">{{content.description42}}</p>
+                <p *ngIf="content.description43.length > 0">{{content.description43}}</p>
+                <h4 class="blue-title" *ngIf="content.title51.length > 0">{{content.title51}}</h4>
+                <p *ngIf="content.description51.length > 0">{{content.description51}} </p>
+                <p *ngIf="content.description52.length > 0">{{content.description52}} </p>
+                <p *ngIf="content.description53.length > 0">{{content.description53}} </p>
+            </div>
+            </div>
+        </div>
+        <div class="row" *ngIf="content.image31.length === 0">
+                <p *ngIf="content.description41.length > 0">{{content.description41}}</p>
+                <p *ngIf="content.description42.length > 0">{{content.description42}}</p>
+                <p *ngIf="content.description43.length > 0">{{content.description43}}</p>
+
+                
+        
+    </div>
+
+        <div class="row qoute-row">
+        <div class="malinua" *ngIf="content.qoute2.length > 0" >
+            
+                <div class="qoute">
+                              <p class="qoute-text">{{content.qoute2}}</p>
+                          </div> 
+                    </div>
+            </div>
+        <div class="row" *ngIf="content.image61.length > 0">
+            <img class="img" src="{{content.image61}}" alt="{{content.imageAlt61}}">
+        </div>
+        <div class="row">
+            <h2 class="section-title" *ngIf="content.title61.length > 0">{{content.title61}}</h2>
+            <p *ngIf="content.description61.length > 0">{{content.description61}} </p>
+            <p *ngIf="content.description62.length > 0">{{content.description62}} </p>
+            <p *ngIf="content.description63.length > 0">{{content.description63}} </p>
+        </div>
+    </div>
+</div>
+<app-footer class="footer" #target></app-footer>

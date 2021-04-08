@@ -1,0 +1,11 @@
+{
+    "extends": "./tsconfig.json",
+    "compilerOptions": {
+      "outDir": "./functions/@agm/core",
+      "types": [],
+      "module": "commonjs"
+    },
+    "include": [
+      "node_modules/@agm/core"
+    ]
+  }

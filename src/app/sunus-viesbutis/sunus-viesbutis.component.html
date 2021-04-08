@@ -1,0 +1,207 @@
+<div *ngFor="let content of allcontent">
+<div class="top-line"  >
+    <div class="inside-top-line">
+        <div class="text">
+            <div class="inside-text">
+                <h1 class="title">{{content.title11}}</h1>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="top-container">
+    <div class="container">
+        <div class="row small">
+        <div class="w-100 p-40">
+        <h1 class="section-title" *ngIf='content.title12.length > 0'>{{content.title12}} </h1>
+    </div>
+    <div>
+        <p *ngIf="content.description11.length > 0">{{content.description11}} </p>
+        <p *ngIf="content.description12.length > 0">{{content.description12}} </p>
+        <p *ngIf="content.description13.length > 0">{{content.description13}} </p>
+    </div>
+        
+    </div>
+
+    <div class="row" *ngIf="content.image0.length > 0">
+        <div class="col-md-6">
+            <img class="img" src="{{content.image0}}" alt="{{content.imageAlt0}}">
+        </div>
+        <div class="col-md-6 near-image">
+            <ul *ngIf="content.list01.length > 0">
+                <li>{{content.list01}}</li>
+                <li *ngIf="content.list02.length > 0">{{content.list02}}</li>
+                <li *ngIf="content.list03.length > 0">{{content.list03}}</li>
+                <li *ngIf="content.list04.length > 0">{{content.list04}}</li>
+                <li *ngIf="content.list05.length > 0">{{content.list05}}</li>
+                <li *ngIf="content.list06.length > 0">{{content.list06}}</li>
+                <li *ngIf="content.list07.length > 0">{{content.list07}}</li>
+            </ul>
+        </div>
+    </div>
+
+    </div>
+    
+</div>
+<div class="styling1">
+    <div class="styling-inside-right">
+        <div class="triangle">                                                  
+        </div>
+    </div>
+    <div class="styling-inside-left">
+        <div class="triangle">
+
+        </div>
+    </div>
+</div>
+
+<div class="section-list">
+    <div class="container middle">
+        <div class="row">
+            <div class="card-container ">           
+                <div class="card-columns">
+                    <div class="card" *ngIf="content.list11.length > 0">
+                        <div class="card-body">
+                            <p class="card-text">{{content.list11}}</p>
+                        </div>
+                    </div>
+                    <div class="card" *ngIf="content.list12.length > 0">
+                        <div class="card-body">
+                            <p class="card-text">{{content.list12}}</p>
+                        </div>
+                    </div>
+                    <div class="card" *ngIf="content.list13.length > 0">
+                        <div class="card-body">
+                            <p class="card-text">{{content.list13}}</p>
+                        </div>
+                    </div>
+                    <div class="card" *ngIf="content.list14.length > 0">
+                        <div class="card-body">
+                            <p class="card-text">{{content.list14}}</p>
+                        </div>
+                    </div>
+                    <div class="card" *ngIf="content.list15.length > 0">
+                        <div class="card-body">
+                            <p class="card-text">{{content.list15}}</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <span class="card-text">gyvūnui susirgus, bendradarbiaujame su R. Rimgailos  <a style="cursor:pointer; font-weight: 600;" class="link" (click)="linkTo('https://www.sveikasaugintinis.lt')">www.sveikasaugintinis.lt</a>  ir G. Brajinsko <a style="cursor:pointer; font-weight: 600;" class="link" (click)="linkTo('https://www.vetkabinetas.lt')">www.vetkabinetas.lt</a>  veterinarijos klinikomis</span>
+                        </div>
+                    </div>
+                    <div class="card" *ngIf="content.list17.length > 0">
+                        <div class="card-body">
+                            <p class="card-text">{{content.list17}}</p>
+                        </div>
+                    </div>
+                    <div class="card" *ngIf="content.list18.length > 0">
+                        <div class="card-body">
+                            <p class="card-text">{{content.list18}}</p>
+                        </div>
+                    </div>
+                    <div class="card" *ngIf="content.list19.length > 0">
+                        <div class="card-body">
+                            <p class="card-text">{{content.list19}}</p>
+                        </div>
+                    </div>
+                    <div class="card" *ngIf="content.list110.length > 0">
+                        <div class="card-body">
+                            <p class="card-text">{{content.list110}}</p>
+                        </div>
+                    </div>
+                    <div class="card" *ngIf="content.list111.length > 0">
+                        <div class="card-body">
+                            <p class="card-text">{{content.list111}}</p>
+                        </div>
+                    </div>
+                    <div class="card" *ngIf="content.list112.length > 0">
+                        <div class="card-body">
+                            <p class="card-text">{{content.list112}}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+</div>
+</div>
+
+
+
+
+
+<div class="styling2">
+    <div class="styling-inside-right">
+        <div class="triangle">                                                  
+        </div>
+    </div>
+    <div class="styling-inside-mid">
+        <div class="triangle">                                                  
+        </div>
+    </div>
+    <div class="styling-inside-left">
+        <div class="triangle">
+
+        </div>
+    </div>
+</div>
+<div class="section2 row-margin-top">
+    <div class="container">
+        <div class="row small">
+            <div class="w-100 p-40">
+            <h2 class="section-title" *ngIf="content.title21.length > 0">{{content.title21}}</h2>
+        </div>
+            <p *ngIf="content.description21.length > 0">{{content.description21}}</p>
+            <p *ngIf="content.description22.length > 0">{{content.description22}}</p>
+            <p *ngIf="content.description23.length > 0">{{content.description23}}</p>
+        </div>
+        <div class="row" *ngIf="content.list21.length > 0">
+            <div class="col-md-6">
+                <img class="img" src="{{content.image}}" alt="{{content.imageAlt}}">
+            </div>
+            <div class="col-md-6 near-image">
+                <ul>
+                    <li>{{content.list21}}</li>
+                    <li *ngIf="content.list22.length > 0">{{content.list22}}</li>
+                    <li *ngIf="content.list23.length > 0">{{content.list23}}</li>
+                    <li *ngIf="content.list24.length > 0">{{content.list24}}</li>
+                    <li *ngIf="content.list25.length > 0">{{content.list25}}</li>
+                    <li *ngIf="content.list26.length > 0">{{content.list26}}</li>
+                    <li *ngIf="content.list27.length > 0">{{content.list27}}</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="section3 row-margin-top" *ngIf="content.title31.length > 0">
+    <div class="container">
+        <div class="row small">
+            <div class="w-100 p-40">
+            <h2 class="section-title" *ngIf="content.title31.length > 0">{{content.title31}}</h2>
+        </div>
+            <p *ngIf="content.description31.length > 0">{{content.description31}}</p>
+            <p *ngIf="content.description32.length > 0">{{content.description32}}</p>
+            <p *ngIf="content.description33.length > 0">{{content.description33}}</p>
+        </div>
+        <div class="row" *ngIf="content.list31.length > 0 || content.description32.length > 0 || content.description33.length > 0">
+            <div class="col-md-6">
+                <img class="img" *ngIf="content.title31.length > 0 || content.description32.length > 0" src="{{content.image3}}" alt="{{content.imageAlt3}}">
+            </div>
+            <div  class="col-md-6 near-image">
+                <ul>
+                    <li>{{content.list31}}</li>
+                    <li *ngIf="content.list32.length > 0">{{content.list32}}</li>
+                    <li *ngIf="content.list33.length > 0">{{content.list33}}</li>
+                    <li *ngIf="content.list34.length > 0">{{content.list34}}</li>
+                    <li *ngIf="content.list35.length > 0">{{content.list35}}</li>
+                    <li *ngIf="content.list36.length > 0">{{content.list36}}</li>
+                    <li *ngIf="content.list37.length > 0">{{content.list37}}</li>
+                </ul>
+                <p *ngIf="content.description34.length > 0">{{content.description32}}</p>
+            </div>
+            <p *ngIf="content.description35.length > 0">{{content.description33}}</p>
+        </div>
+    </div>
+</div>
+</div>
+<app-footer class="footer" #target></app-footer>

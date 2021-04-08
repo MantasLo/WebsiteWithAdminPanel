@@ -1,0 +1,219 @@
+::ng-deep #current-image {
+    max-height: 100%!important;
+    height: 100%!important;
+    cursor: pointer;
+  }
+  .top-line{
+    background-image: radial-gradient(circle at top left,#576574 0%,rgba(255,255,255,.87) 100%),
+    url("src/assets/paslaugos.jpg")!important;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    padding-top: 100px;
+    position: relative;
+    background-color: #fff;
+    .inside-top-line{
+        max-width: 1280px;
+        padding: 30px 0;
+        position: relative;
+        width: 80%;
+        .text{
+            border-left-width: 10px;
+            border-left-color: #295da8;
+            padding-left: 16px!important;
+            margin-bottom: 0px!important;
+            color: #fff!important;
+            .inside-text{
+                padding-bottom: 0;
+                h1{
+                    font-size: 3rem;
+                    line-height: 1.3em;
+                }
+            }
+        }
+    }
+}
+.img-half{
+    width: 100%;
+}
+.title{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1.3em;
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.near-image{
+    background-color: #f2f2f2;
+    padding: 30px;
+    height: 100%;
+    width: 100%;
+}
+.row-title{
+    width: 100%;
+    margin-top: 40px;
+}
+.col-md-6{
+    padding: 0px;
+}
+.row-heading{
+    margin-top: 40px;
+}
+
+.my-app-custom-plain-container-row {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+  .my-app-custom-plain-container-row .my-app-custom-image-row {
+    cursor: pointer;
+    height: auto;
+    margin-right: 2%;
+    //width: 32%;
+  }
+  .my-app-custom-plain-container-row .my-app-custom-image-row.after {
+    border-top: 2px;
+    cursor: pointer;
+    display: none;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+  .more {
+    background: rgba(0, 0, 0, 0.7);
+    cursor: pointer;
+    color: #fff;
+    padding-top: 4px;
+    height: inherit;
+    position: absolute;
+    text-align: center;
+    width: 50px !important;
+  }
+  .ng-star-inserted{
+      width: 99%;
+  }
+  main figure #current-image{
+    height: auto !important;
+  }
+  .my-app-custom-plain-container-row{
+    width: 100%;
+  }
+  ngx-gallery{
+      width: 100%!important;
+      height: 600px!important;
+  }
+
+::ng-deep #current-image {
+    max-height: 100%!important;
+    height: 100%!important;
+    cursor: pointer;
+  }
+
+  @media only screen and (max-width: 1400px) and (min-width: 1200px){
+
+}
+@media (max-width: 1200px) and (min-width: 991px){
+
+}
+@media only screen and (max-width: 992px) and (min-width: 769px){
+    .inside-text{
+        h1{
+            font-size:2.5rem;
+        }
+    }
+    .text-title{
+        font-size: 46px;
+    }
+    .text-title{
+        font-size: 46px;
+    }
+}
+@media only screen and (max-width: 769px) and (min-width: 576px){
+    .inside-text{
+        h1{
+            font-size:2.5rem;
+        }
+    }
+    .text-title{
+        font-size: 46px;
+    }
+}
+
+@media (max-width: 576px) and (min-width: 414px){
+  .inside-text{
+      h1{
+          font-size:2.5rem;
+          line-height: 3rem;
+      }
+  }
+  .small{
+      padding: 0px 40px;
+  }
+  p{
+      font-size: 12px;
+  }
+  .small{
+    padding: 0px 40px;
+}
+.text-title{
+    font-size: 32px;
+    line-height: 3rem;
+}
+.small{
+    padding:0px 40px;
+    h2{
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+}
+li{
+    font-size: 12px;
+}
+}
+@media only screen and (max-width: 414px) {
+  .inside-text{
+      h1{
+          font-size:2rem;
+          line-height: 3rem;
+      }
+  }
+  .small{
+    padding: 0px 40px;
+}
+p{
+    font-size: 10px;
+}
+  .small{
+    padding: 0px 40px;
+}
+h3{
+    font-size:2rem;
+
+}
+h4{
+    font-size:2rem;
+}
+a.nav-link{
+    font-size: 10px;
+    line-height: 20px;
+}
+.text-title{
+    font-size: 32px;
+    line-height: 3rem;
+}
+.small{
+    padding:0px 40px;
+    h2{
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+}
+li{
+    font-size: 12px;
+}
+}

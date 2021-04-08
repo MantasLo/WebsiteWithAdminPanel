@@ -1,0 +1,17 @@
+<mat-toolbar color="primary">
+  <span>
+    <a (click)="routeTo('projects')">Renginys</a>
+  </span>
+  <span class="spacer"></span>
+  <ul>
+    <li *ngIf="authService.auth.currentUser">
+      <a (click)="routeTo('create')" mat-button>Naujas renginys</a>
+    </li>
+    <li *ngIf="!authService.auth.currentUser">
+      <a (click)="routeTo('login')" mat-button>Login</a>
+    </li>
+    <li *ngIf="authService.auth.currentUser">
+      <button mat-button (click)="onLogout()">Logout</button>
+    </li>
+  </ul>
+</mat-toolbar>

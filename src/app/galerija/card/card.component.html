@@ -1,0 +1,12 @@
+      <div class="card" (click)="onCardClick()">
+
+        <img class="card-img-top" src="{{card.iconUrl1}}" alt="Card image cap" *ngIf="card.cardImg.length == 0">
+        <img class="card-img-top" src="{{card.cardImg}}" alt="Card image cap" *ngIf="card.iconUrl1.length == 0">
+
+        <div class="middle">
+          <div class="inside"><img class="img" src="../assets/gallery.png" alt=""></div>
+      </div>
+        <h4 class="card-title"><a>{{card.description}}</a></h4>
+
+      </div>
+    

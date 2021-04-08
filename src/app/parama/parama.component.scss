@@ -1,0 +1,106 @@
+.top-line{
+    background-image: radial-gradient(circle at top left,#576574 0%,rgba(255,255,255,.87) 100%),
+    url("src/assets/paslaugos.jpg")!important;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    padding-top: 100px;
+    position: relative;
+    background-color: #fff;
+    .inside-top-line{
+        max-width: 1280px;
+        padding: 30px 0;
+        position: relative;
+        width: 80%;
+        .text{
+            border-left-width: 10px;
+            border-left-color: #295da8;
+            padding-left: 16px!important;
+            margin-bottom: 0px!important;
+            color: #fff!important;
+            .inside-text{
+                padding-bottom: 0;
+                h1{
+                    font-size: 3rem;
+                    line-height: 1.3em;
+                }
+            }
+        }
+    }
+}
+.parama-line{
+    width: 100%;
+}
+.link{
+    color: #0c71c3;
+}
+.heavy-text{
+font-size: 16px;
+font-weight: 600;
+display: inline;
+}
+.section-title{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1.3em;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  @media only screen and (max-width: 1400px) and (min-width: 1200px){
+
+}
+@media (max-width: 1200px) and (min-width: 991px){
+
+}
+@media only screen and (max-width: 992px) and (min-width: 769px){
+    .inside-text{
+        h1{
+            font-size:2.5rem;
+        }
+    }
+
+}
+@media only screen and (max-width: 769px) and (min-width: 576px){
+    .inside-text{
+        h1{
+            font-size:2.5rem;
+        }
+    }
+
+}
+
+@media (max-width: 576px) and (min-width: 414px){
+  .inside-text{
+      h1{
+          font-size:2.5rem;
+      }
+  }
+  p{
+    font-size: 12px;
+}
+.row{
+    margin-left:0px!important;
+    margin-right: 0px!important;
+}
+}
+@media only screen and (max-width: 414px) {
+  .inside-text{
+      h1{
+          font-size:2rem;
+      }
+  }
+  p{
+    font-size: 12px;
+}
+.qoute-text{
+    font-size: 16px!important;
+}
+.blue-title{
+    font-size: 1.8rem!important;
+}
+.row{
+    margin-left:0px!important;
+    margin-right: 0px!important;
+    margin-bottom: 50px;
+}
+}

@@ -1,0 +1,102 @@
+.logo{
+    max-width: 100px;
+}
+
+.dark-grey-text{
+    padding-left:20px;
+}
+
+.ambimax-social{
+    background-color: #FF8504;
+}
+
+.hovermenu:hover{
+    color: #FF8504!important;
+}
+
+.blue-grey{
+    background-color: #576574!important;
+    color: aliceblue!important;
+    text-decoration: none!important;
+}
+
+a{
+    color: aliceblue!important;
+}
+.footer-copyright{
+    color: aliceblue!important;
+}
+.row{
+    margin-left: 0px!important;
+    margin-right: 0px!important;
+}
+.page-footer{
+    // margin-top: 100px;
+}
+agm-map {
+    height: 300px;
+    max-width: 600px;
+    position: absolute;
+      top: 0;
+      left: 0; 
+right: 0; 
+margin-left: auto; 
+margin-right: auto; 
+    
+  }
+  .map-outside{
+      margin-top: 150px;
+    position: relative;
+    height: 150px;
+    .map{
+    //   position: absolute;
+    //   top: 0;
+  }
+}
+
+.links{
+    display: block;
+    cursor: pointer;
+    text-decoration: none;
+    width: 100%;
+}
+
+.btn-special{
+        color: aliceblue;
+        border-color:aliceblue;
+        background: transparent;
+        border-radius: 0px;
+        border:1px solid;
+     
+}
+
+.btn-special:hover{
+    background-color: aliceblue;
+    color: black!important;
+  }
+
+@media only screen and (max-width: 1400px) and (min-width: 1200px){
+
+}
+@media (max-width: 1200px) and (min-width: 991px){
+
+}
+@media only screen and (max-width: 992px) and (min-width: 769px){
+
+}
+@media only screen and (max-width: 769px) and (min-width: 576px){
+    .map-outside{
+        margin-top: 0px!important;
+    }
+}
+
+@media (max-width: 576px) and (min-width: 414px){
+    .map-outside{
+        margin-top: 0px!important;
+    }
+}
+@media only screen and (max-width: 414px) {
+    .map-outside{
+        margin-top: 0px!important;
+    }
+}

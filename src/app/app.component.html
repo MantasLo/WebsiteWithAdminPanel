@@ -1,0 +1,83 @@
+
+
+
+<div class="content-wrap">
+<div class="header" #stickyMenu [class.sticky] = "sticky" [@slideInOut]="helpMenuOpen" *ngIf="displayHeader">
+  <div class="inside-header">
+    <div class="logo">
+      <a routerLink="namu-puslapis" (click)="onActivate($event)">
+        <img src="assets/LOGO/logo_vektorius.svg" alt="Laukinė Orchidėja Šunų priežiūros centras">
+      </a>
+    </div>
+    <div class="nav">
+      <button (click)="onActivate($event)" *ngIf="!smallscreen" type="button" class="btn-parama" data-toggle="dropdown" routerLink="parama">PARAMA</button>
+      <nav class="d-flex justify-content-start" *ngIf="!smallscreen" appDropdown>
+        <button (click)="onActivate($event)" routerLink="namu-puslapis" type="button" class="dropdown-togle btn-shadow toggleClass" data-toggle="dropdown">PAGRINDINIS
+          <span class="caret"></span>
+      </button>
+        <div class="dropdown" appDropdownInside>
+          <button type="button" class="dropdown-togle btn-shadow" data-toggle="dropdown">PASLAUGOS
+              <span class="caret"></span>
+          </button>
+          <div  class="dropdown-menu" #ifOppen>
+          <a (click)="onActivate($event)" name="BELGŲ AVIGANIŲ MALINUA VEISLYNAS" class="dropdown-item ambimax-nb"  routerLink="paslaugos/belgu-aviganiu-malinua-veislynas">BELGŲ AVIGANIŲ MALINUA VEISLYNAS</a>
+          <a (click)="onActivate($event)" name="ŠUNŲ DRESŪRA" class="dropdown-item ambimax-nb" routerLink="paslaugos/sunu-dresura">ŠUNŲ DRESŪRA</a>
+          <!-- <div class="dropdown-divider"></div> -->
+          <a (click)="onActivate($event)" name="ŠUNŲ VIEŠBUTIS" class="dropdown-item ambimax-nb" routerLink="paslaugos/sunu-viesbutis" >ŠUNŲ VIEŠBUTIS</a>
+          <a (click)="onActivate($event)" name="KANITERAPIJA" class="dropdown-item ambimax-nb" routerLink="paslaugos/kaniterapija" >KANITERAPIJA</a>
+          <!-- <div class="dropdown-divider"></div> -->
+          <a (click)="onActivate($event)" name="EDUKACINĖS PROGRAMOS" class="dropdown-item ambimax-nb" routerLink="paslaugos/edukacines-programos" >EDUKACINĖS PROGRAMOS</a>
+          </div>
+        </div>
+        <!-- <ul> -->
+          <button (click)="onActivate($event)" routerLink="renginiai" type="button" class="dropdown-togle btn-shadow" >RENGINIAI
+            <span class="caret"></span>
+        </button>
+        <button (click)="onActivate($event)" routerLink="malinua" type="button" class=" dropdown-togle btn-shadow">MALINUA
+          <span class="caret"></span>
+      </button>
+      <button (click)="onActivate($event)" routerLink="apie-mane" type="button" class="dropdown-togle btn-shadow">APIE MANE
+              <span class="caret"></span>
+          </button>
+          <button (click)="scrollTo('.footer')" type="button" class="dropdown-togle btn-shadow" >KONTAKTAI
+            <span class="caret"></span>
+        </button>
+            <!-- <li  ><a>PAGRINDINIS</a></li>
+            <li ><a >PASLAUGOS</a></li>
+            <li routerLink="renginiai"><a >RENGINIAI</a></li>
+            <li routerLink="malinua"><a >MALINUA</a></li>
+            <li routerLink="apie-mane"><a >APIE MANE</a></li>
+            <li routerLink=""><a >KONTAKTAI</a></li>
+          </ul> -->
+      </nav>
+      <div class="mobile" *ngIf="smallscreen" (click)="drawer.toggle()" style="cursor: pointer">
+        <p style="font-weight:700">MENIU</p>
+        <!-- <button (click)="drawer.toggle()"> Menu </button> -->
+      </div>
+    </div>
+  </div>
+  <div class="tabs is-centered is-fullwidth">
+</div>
+</div>
+
+  <igx-nav-drawer  id="navigation" #drawer [isOpen]="false">
+  <ng-template igxDrawer>
+    <nav>
+      <span (click)="drawer.toggle()" (click)="onActivate($event)" routerLink="namu-puslapis" igxDrawerItem >PAGRINDINIS</span>
+      <span (click)="drawer.toggle()" (click)="onActivate($event)" routerLink="paslaugos/belgu-aviganiu-malinua-veislynas" igxDrawerItem >BELGŲ AVIGANIŲ MALINUA VEISLYNAS</span>
+      <span (click)="drawer.toggle()" (click)="onActivate($event)" routerLink="paslaugos/sunu-dresura" igxDrawerItem igxRipple>ŠUNŲ DRESŪRA</span>
+      <span (click)="drawer.toggle()" (click)="onActivate($event)" routerLink="paslaugos/sunu-viesbutis"  igxDrawerItem igxRipple >ŠUNŲ VIEŠBUTIS</span>
+      <span (click)="drawer.toggle()" (click)="onActivate($event)" routerLink="paslaugos/kaniterapija" igxDrawerItem igxRipple >KANITERAPIJA</span>
+      <span (click)="drawer.toggle()" (click)="onActivate($event)" routerLink="paslaugos/edukacines-programos" igxDrawerItem igxRipple>EDUKACINĖS PROGRAMOS</span>
+      <span (click)="drawer.toggle()" (click)="onActivate($event)" routerLink="renginiai" igxDrawerItem >RENGINIAI</span>
+      <span (click)="drawer.toggle()" (click)="onActivate($event)" routerLink="malinua" igxDrawerItem igxRipple>MALINUA</span>
+      <span (click)="drawer.toggle()" (click)="onActivate($event)" routerLink="apie-mane" igxDrawerItem igxRipple>APIE MANE</span>
+      <span (click)="drawer.toggle()" (click)="scrollTo('.footer')"  igxDrawerItem igxRipple>KONTAKTAI</span>
+      <span (click)="drawer.toggle()" (click)="onActivate($event)" routerLink="parama" igxDrawerItem igxRipple>PARAMA</span>
+    </nav>
+  </ng-template>
+</igx-nav-drawer>
+
+<router-outlet ></router-outlet>
+</div>
+
