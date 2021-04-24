@@ -152,7 +152,7 @@ export class HomeComponent implements OnInit {
         //console.log(this.allcontent);
     });
   } else {
-    this.allcontent = this.service.allcontent;
+    this.allcontent = this.service.lastSix;
   }
     
   }

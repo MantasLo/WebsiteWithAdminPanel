@@ -11,6 +11,7 @@ import {take} from 'rxjs/operators';
 export class GalerijaService {
 
   allcontent = [];
+  lastSix = [];
   contentSubject = new Subject();
 
   //allcontent: Card[] = new Array[1];
@@ -37,6 +38,9 @@ export class GalerijaService {
         });
         // console.log(project.body);
       });
+      this.allcontent.sort((a: Card, b:Card) => {
+        return b.year - a.year || b.month - a.month || b.day - a.day;
+      });
     });
   }
 
@@ -45,6 +49,7 @@ export class GalerijaService {
       return b.year - a.year || b.month - a.month || b.day - a.day;
     });
     let newArray = this.allcontent.slice(0, 6);
+    this.lastSix = newArray;
     //need to sort by year and then add first six elements to array
     return of(newArray);
   }
